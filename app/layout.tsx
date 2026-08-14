@@ -2,8 +2,11 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Human Value Exchange",
-  description: "The official Human Value Exchange website."
+  title: {
+    default: "Human Value Exchange",
+    template: "%s | Human Value Exchange"
+  },
+  description: "A framework for building the Five Types of Wealth."
 };
 
 export default function RootLayout({
