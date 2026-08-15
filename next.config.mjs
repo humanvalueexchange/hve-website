@@ -4,9 +4,7 @@ const nextConfig = {
   trailingSlash: true,
   images: {
     unoptimized: true
-  },
-  basePath: "/hve-website",
-  assetPrefix: "/hve-website/"
+  }
 };
 
 export default nextConfig;
