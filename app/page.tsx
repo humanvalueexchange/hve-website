@@ -27,7 +27,7 @@ export default function Home() {
               freedom, sovereignty, self-mastery, and human flourishing.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
-              <Link className="rounded-full bg-[#d7a85b] px-6 py-3 font-semibold text-[#10231e] transition hover:bg-[#e5bd7b]" href="/about">
+              <Link className="rounded-full bg-[#d7a85b] px-6 py-3 font-semibold text-[#10231e] transition hover:bg-[#e5bd7b]" href="/five-types">
                 Explore the framework
               </Link>
               <Link className="rounded-full border border-[#8ea196] px-6 py-3 font-semibold transition hover:border-white" href="/workshops">
@@ -69,7 +69,7 @@ export default function Home() {
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#44705c]">Start where you are</p>
             <h2 className="mt-4 text-4xl font-semibold tracking-tight text-[#10231e]">Your next chapter deserves a better measure of wealth.</h2>
           </div>
-          <Link className="shrink-0 rounded-full bg-[#10231e] px-6 py-3 font-semibold text-white transition hover:bg-[#24483a]" href="/workshops">
+          <Link className="shrink-0 rounded-full bg-[#10231e] px-6 py-3 font-semibold text-white transition hover:bg-[#24483a]" href="/work-with-us">
             Find your next step
           </Link>
         </div>

@@ -32,7 +32,8 @@ export default function WealthPage({ params }: { params: { slug: string } }) {
       <section className="px-6 py-20 sm:py-28">
         <div className="mx-auto max-w-3xl">
           <p className="text-xl leading-9 text-[#536159]">{item.body}</p>
-          <div className="mt-12 border-t border-[#d8ddd5] pt-8">
+          <div className="mt-12 flex flex-wrap gap-6 border-t border-[#d8ddd5] pt-8">
+            <Link className="font-semibold text-[#10231e] hover:text-[#b27a32]" href="/five-types">View all five types →</Link>
             <Link className="font-semibold text-[#10231e] hover:text-[#b27a32]" href="/workshops">Explore an HVE workshop →</Link>
           </div>
         </div>

@@ -7,10 +7,10 @@ export function SiteHeader() {
         <Link className="text-lg font-bold tracking-[0.12em]" href="/">HVE</Link>
         <nav aria-label="Main navigation" className="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm font-semibold sm:gap-x-8">
           <Link className="hover:text-[#b27a32]" href="/about">About</Link>
-          <Link className="hover:text-[#b27a32]" href="/wealth/time">The Five Types</Link>
+          <Link className="hover:text-[#b27a32]" href="/five-types">The Five Types</Link>
           <Link className="hover:text-[#b27a32]" href="/workshops">Workshops</Link>
           <a className="hover:text-[#b27a32]" href="https://humanvalueexchange.blog">Blog</a>
-          <Link className="hidden rounded-full bg-[#10231e] px-4 py-2 text-white transition hover:bg-[#24483a] sm:inline-block" href="/workshops">
+          <Link className="hidden rounded-full bg-[#10231e] px-4 py-2 text-white transition hover:bg-[#24483a] sm:inline-block" href="/work-with-us">
             Work with us
           </Link>
         </nav>
