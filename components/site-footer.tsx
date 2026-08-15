@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { AccessibilityToggle } from "@/components/accessibility-toggle";
 
 export function SiteFooter() {
   return (
@@ -20,7 +21,13 @@ export function SiteFooter() {
         </nav>
       </div>
       <div className="mx-auto mt-10 max-w-6xl border-t border-[#365448] pt-5 text-sm text-[#8ea196]">
-        Human Value Exchange · Wealth is more than money.
+        <div className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p>Human Value Exchange · Wealth is more than money.</p>
+            <p className="mt-2">Designed to improve readability for some visitors with dyslexia.</p>
+          </div>
+          <AccessibilityToggle />
+        </div>
       </div>
     </footer>
   );
