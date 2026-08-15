@@ -1,13 +1,6 @@
 import Link from "next/link";
 import { SiteHeader } from "@/components/site-header";
-
-const wealthTypes = [
-  ["Time Wealth", "Own more of your attention, energy, and calendar.", "time"],
-  ["Physical Wealth", "Build the strength and vitality to live fully.", "physical"],
-  ["Mental Wealth", "Develop clarity, resilience, and a growth-oriented mind.", "mental"],
-  ["Social Wealth", "Create relationships and communities that make life richer.", "social"],
-  ["Financial Wealth", "Use money as a tool for freedom and meaningful choice.", "financial"]
-];
+import { wealthContent } from "@/lib/wealth-content";
 
 export const metadata = {
   title: "The Five Types of Wealth | Human Value Exchange",
@@ -22,23 +15,34 @@ export default function FiveTypesPage() {
         <div className="mx-auto max-w-4xl">
           <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[#d7a85b]">The HVE framework</p>
           <h1 className="mt-6 text-5xl font-semibold leading-tight tracking-tight sm:text-7xl">Build wealth in every direction.</h1>
-          <p className="mt-8 max-w-2xl text-xl leading-8 text-[#d7ded8]">
-            Wealth is more than money. These five forms of wealth give you a practical language for seeing what is working, what is depleted, and where your next investment belongs.
+          <p className="mt-8 max-w-3xl text-xl leading-8 text-[#d7ded8]">
+            Wealth is more than money. The Five Types of Wealth give you a practical way to measure the resources that create freedom, sovereignty, and human flourishing.
           </p>
         </div>
       </section>
       <section className="bg-[#f6f3ec] px-6 py-20 sm:py-28">
         <div className="mx-auto max-w-6xl">
           <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-            {wealthTypes.map(([title, description, slug], index) => (
-              <Link className="group rounded-2xl border border-[#d8ddd5] bg-white p-7 transition hover:-translate-y-1 hover:border-[#b27a32]" href={`/wealth/${slug}`} key={slug}>
+            {wealthContent.map((item, index) => (
+              <Link className="group rounded-2xl border border-[#d8ddd5] bg-white p-7 transition hover:-translate-y-1 hover:border-[#b27a32]" href={`/wealth/${item.slug}`} key={item.slug}>
                 <p className="text-sm font-semibold text-[#b27a32]">0{index + 1}</p>
-                <h2 className="mt-10 text-2xl font-semibold text-[#10231e]">{title}</h2>
-                <p className="mt-4 leading-7 text-[#536159]">{description}</p>
-                <span className="mt-6 inline-block font-semibold text-[#10231e] group-hover:text-[#b27a32]">Explore {title} →</span>
+                <h2 className="mt-10 text-2xl font-semibold text-[#10231e]">{item.name}</h2>
+                <p className="mt-4 leading-7 text-[#536159]">{item.definition}</p>
+                <span className="mt-6 inline-block font-semibold text-[#10231e] group-hover:text-[#b27a32]">Explore {item.name} →</span>
               </Link>
             ))}
           </div>
+        </div>
+      </section>
+      <section className="bg-[#dce8df] px-6 py-20 sm:py-24">
+        <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-8 md:flex-row md:items-center">
+          <div className="max-w-2xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#44705c]">Make it practical</p>
+            <h2 className="mt-4 text-4xl font-semibold tracking-tight text-[#10231e]">See where your next investment belongs.</h2>
+          </div>
+          <Link className="rounded-full bg-[#10231e] px-6 py-3 font-semibold text-white transition hover:bg-[#24483a]" href="/workshops">
+            Explore workshops
+          </Link>
         </div>
       </section>
     </main>

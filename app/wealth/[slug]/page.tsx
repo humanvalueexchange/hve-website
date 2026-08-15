@@ -1,22 +1,14 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { SiteHeader } from "@/components/site-header";
-
-const wealth = {
-  time: { name: "Time Wealth", summary: "The freedom to direct your attention toward what matters.", body: "Time wealth is the ability to spend your finite hours intentionally. It grows when your commitments, systems, and boundaries reflect your priorities." },
-  physical: { name: "Physical Wealth", summary: "The energy and capability to participate fully in your life.", body: "Physical wealth is built through strength, health, rest, and environments that support your vitality. It is the foundation that lets your ambitions become real." },
-  mental: { name: "Mental Wealth", summary: "The clarity and resilience to meet life with agency.", body: "Mental wealth includes your attention, emotional regulation, curiosity, and capacity to learn. It helps you respond rather than simply react." },
-  social: { name: "Social Wealth", summary: "The relationships and belonging that make life meaningful.", body: "Social wealth is the quality of your relationships, communities, and mutual support. It grows through trust, generosity, and honest connection." },
-  financial: { name: "Financial Wealth", summary: "The resources and options that expand your freedom.", body: "Financial wealth is the ability to use money intentionally: to create stability, protect your time, and choose work and experiences aligned with your values." }
-} as const;
+import { wealthContent } from "@/lib/wealth-content";
 
 export function generateStaticParams() {
-  return Object.keys(wealth).map((slug) => ({ slug }));
+  return wealthContent.map(({ slug }) => ({ slug }));
 }
 
 export default function WealthPage({ params }: { params: { slug: string } }) {
-  const { slug } = params;
-  const item = wealth[slug as keyof typeof wealth];
+  const item = wealthContent.find((wealth) => wealth.slug === params.slug);
   if (!item) notFound();
 
   return (
@@ -26,15 +18,45 @@ export default function WealthPage({ params }: { params: { slug: string } }) {
         <div className="mx-auto max-w-4xl">
           <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[#d7a85b]">One of five</p>
           <h1 className="mt-6 text-5xl font-semibold leading-tight tracking-tight sm:text-7xl">{item.name}</h1>
-          <p className="mt-8 max-w-2xl text-xl leading-8 text-[#d7ded8]">{item.summary}</p>
+          <p className="mt-8 max-w-3xl text-xl leading-8 text-[#d7ded8]">{item.definition}</p>
         </div>
       </section>
+
       <section className="px-6 py-20 sm:py-28">
-        <div className="mx-auto max-w-3xl">
-          <p className="text-xl leading-9 text-[#536159]">{item.body}</p>
-          <div className="mt-12 flex flex-wrap gap-6 border-t border-[#d8ddd5] pt-8">
-            <Link className="font-semibold text-[#10231e] hover:text-[#b27a32]" href="/five-types">View all five types →</Link>
-            <Link className="font-semibold text-[#10231e] hover:text-[#b27a32]" href="/workshops">Explore an HVE workshop →</Link>
+        <div className="mx-auto max-w-6xl">
+          <div className="grid gap-12 md:grid-cols-[1fr_1.2fr]">
+            <h2 className="text-3xl font-semibold tracking-tight text-[#10231e] sm:text-4xl">Why it matters</h2>
+            <p className="text-xl leading-9 text-[#536159]">{item.whyItMatters}</p>
+          </div>
+
+          <div className="mt-20 grid gap-6 md:grid-cols-2">
+            <div className="rounded-2xl bg-[#dce8df] p-7">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#44705c]">Signs of abundance</p>
+              <ul className="mt-6 space-y-4 text-lg leading-8 text-[#10231e]">
+                {item.abundance.map((sign) => <li key={sign}>+ {sign}</li>)}
+              </ul>
+            </div>
+            <div className="rounded-2xl border border-[#d8ddd5] p-7">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#b27a32]">Signs of depletion</p>
+              <ul className="mt-6 space-y-4 text-lg leading-8 text-[#536159]">
+                {item.depletion.map((sign) => <li key={sign}>- {sign}</li>)}
+              </ul>
+            </div>
+          </div>
+
+          <div className="mt-20 grid gap-12 border-t border-[#d8ddd5] pt-12 md:grid-cols-[1fr_1.2fr]">
+            <h2 className="text-3xl font-semibold tracking-tight text-[#10231e] sm:text-4xl">How HVE helps</h2>
+            <div>
+              <p className="text-lg leading-8 text-[#536159]">{item.helps}</p>
+              <div className="mt-8 flex flex-wrap gap-5">
+                <Link className="rounded-full bg-[#10231e] px-6 py-3 font-semibold text-white transition hover:bg-[#24483a]" href="/workshops">
+                  Explore workshops
+                </Link>
+                <Link className="rounded-full border border-[#10231e] px-6 py-3 font-semibold text-[#10231e] transition hover:bg-[#10231e] hover:text-white" href="/work-with-us">
+                  Work with us
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>
