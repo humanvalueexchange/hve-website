@@ -1,18 +1,24 @@
-# Human Value Exchange Website
+# Human Value Exchange Website Instructions
 
 ## Project
 
-Human Value Exchange (HVE)
+Human Value Exchange public website.
+
+Production domain:
+
+https://humanvalueexchange.com
+
+Blog domain:
+
+https://humanvalueexchange.blog
 
 Repository:
 
 humanvalueexchange/hve-website
 
-Mission:
+## Mission
 
-Help people achieve freedom, sovereignty, self-mastery, and human flourishing through the Five Types of Wealth.
-
-The five wealth pillars are:
+Human Value Exchange helps people build freedom, sovereignty, self-mastery, and human flourishing through the Five Types of Wealth:
 
 1. Time Wealth
 2. Physical Wealth
@@ -20,183 +26,107 @@ The five wealth pillars are:
 4. Social Wealth
 5. Financial Wealth
 
----
-
-## Current Objective
-
-Build a professional public marketing website.
-
-The website exists to:
-
-- Establish the HVE brand
-- Explain the Five Types of Wealth
-- Generate leads
-- Book discovery calls
-- Promote workshops
-- Build credibility
-
-Current website goal:
-
-Visitor
-→ Assessment
-→ Discovery Call
-→ Workshop
-→ Client
-
----
-
 ## Current Phase
 
-Phase 1
+V2 Website Improvement
 
-Marketing Website
-
-Focus on:
-
-- Brand messaging
-- Homepage
-- About page
-- Five Wealth pages
-- Workshop pages
-- Contact pages
-- Conversion
-
-Do not over-engineer.
-
----
+The goal is to improve brand clarity, content depth, navigation, blog integration, and conversion.
 
 ## Technical Stack
-
-Platform:
 
 - Next.js
 - TypeScript
 - Tailwind CSS
-
-Hosting Target:
-
+- Static export
 - GitHub Pages
+- Custom domain at root
 
-Development Environment:
+Important:
 
-- Ubuntu WSL2
-- Node via NVM
-- Native Linux tooling
+The site now runs at:
 
----
+https://humanvalueexchange.com
 
-## Development Principles
+Do not configure the website for:
 
-Prefer:
+/hve-website
 
-- Simplicity
-- Performance
-- Readability
-- Maintainability
-- Mobile-first design
-
-Avoid:
-
-- Complex frameworks
-- Unnecessary dependencies
-- Premature optimization
-- Excessive animations
-
----
+Do not add basePath or assetPrefix unless specifically requested.
 
 ## Design Direction
 
-Style:
+Use:
 
-Apple simplicity
-+
-Microsoft clarity
-+
-Professional consulting brand
-
-Themes:
-
-- Freedom
-- Sovereignty
-- Human Flourishing
-- Self-Mastery
-- Wealth Creation
-- AI Productivity
-
-Color style:
-
-- Clean
-- Premium
-- Modern
-- Trustworthy
+- Apple simplicity
+- Microsoft clarity
+- Premium consulting brand
+- Clean typography
+- Generous whitespace
+- Dark green / cream / gold palette
+- Professional, trusted, aspirational tone
 
 Avoid:
 
-- Crypto aesthetics
-- Dark conspiracy aesthetics
-- Excessive spiritual symbolism
+- Crypto aesthetic
+- Conspiracy aesthetic
+- Overly mystical visual design
+- Excessive animation
+- Heavy dependencies
 
----
+## Content Direction
 
-## Content Guidelines
+Communicate that wealth is more than money.
 
-The website should clearly communicate:
+Human Value Exchange helps people improve:
 
-Wealth is more than money.
+- Time
+- Body
+- Mind
+- Relationships
+- Money
 
-Human Value Exchange measures and improves:
+The site should appeal to:
 
-- Time Wealth
-- Physical Wealth
-- Mental Wealth
-- Social Wealth
-- Financial Wealth
+- Individuals
+- Families
+- Entrepreneurs
+- Professionals
+- SMB owners
+- Coaches and advisors
+- Partners
 
-The visitor should understand HVE within 30 seconds.
+## Primary CTAs
 
----
+Use these calls to action:
 
-## Calls To Action
+- Explore the framework
+- Join a workshop
+- Work with us
+- Read the blog
+- Book a discovery call
 
-Preferred CTAs:
+## Blog
 
-- Take the Five Wealth Assessment
-- Book a Discovery Call
-- Attend a Workshop
-- Learn About HVE Life OS
+The blog lives at:
 
----
+https://humanvalueexchange.blog
+
+Add Blog to navigation and footer.
 
 ## Future Vision
 
-HVE Life OS
+HVE Life OS is a future product vision.
 
-Future capabilities may include:
+It should be described as a future personal operating system for measuring and improving all five forms of wealth.
 
-- Personal dashboards
-- Wealth scoring
-- AI agents
-- Assessments
-- Member experiences
+Do not build app functionality yet.
 
-These features are future roadmap items.
-
-Do not implement them in the marketing website unless specifically directed.
-
----
-
-## Repository Rules
+## Development Rules
 
 Always:
 
-- Run builds before committing
-- Maintain TypeScript correctness
-- Maintain responsive design
-- Keep the site GitHub Pages compatible
-
-Before major changes:
-
-- Explain rationale
-- Keep commits small and focused
-
-The primary goal is shipping a professional website quickly.
+- Run npm run build before committing
+- Preserve responsive design
+- Keep the site static-export compatible
+- Keep commits focused
+- Push to main only after build passes
