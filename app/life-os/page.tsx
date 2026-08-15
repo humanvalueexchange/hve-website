@@ -117,11 +117,11 @@ export default function LifeOsPage() {
       <section className="bg-[#dce8df] px-6 py-20 sm:py-24">
         <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-8 md:flex-row md:items-center">
           <div className="max-w-2xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#44705c]">Follow the journey</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#44705c]">Follow the build</p>
             <h2 className="mt-4 text-4xl font-semibold tracking-tight text-[#10231e] sm:text-5xl">The future is built in public.</h2>
           </div>
           <a className="rounded-full bg-[#10231e] px-6 py-3 font-semibold text-white transition hover:bg-[#24483a]" href="https://humanvalueexchange.blog">
-            Follow the journey on the blog
+            Follow the build
           </a>
         </div>
       </section>

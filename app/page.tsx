@@ -155,7 +155,7 @@ export default function Home() {
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#b27a32]">Latest thinking</p>
             <h2 className="mt-4 text-4xl font-semibold tracking-tight text-[#10231e] sm:text-5xl">Latest from Human Value Exchange</h2>
             <p className="mt-5 text-lg leading-8 text-[#536159]">
-              Read essays on sovereignty, AI productivity, wellness, wealth, and the future of human flourishing.
+              Essays and field notes on sovereignty, AI productivity, health, wealth, relationships, and the future of human flourishing.
             </p>
           </div>
           <a className="shrink-0 rounded-full border border-[#10231e] px-6 py-3 font-semibold text-[#10231e] transition hover:bg-[#10231e] hover:text-white" href="https://humanvalueexchange.blog">

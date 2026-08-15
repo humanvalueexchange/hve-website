@@ -135,7 +135,7 @@ export default function WorkshopsPage() {
               Work with us
             </Link>
             <a className="rounded-full border border-[#8ea196] px-6 py-3 font-semibold transition hover:border-white" href="https://humanvalueexchange.blog">
-              Read the blog
+              Read workshop insights
             </a>
           </div>
         </div>

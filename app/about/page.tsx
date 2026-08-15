@@ -94,6 +94,9 @@ export default function AboutPage() {
             <p>
               Future HVE Life OS tools will make the framework more personal and measurable. For now, the work starts with a conversation, a workshop, or a useful idea shared in public.
             </p>
+            <a className="inline-block font-semibold text-[#d7a85b] hover:text-[#e5bd7b]" href="https://humanvalueexchange.blog">
+              Read the Founder Notes →
+            </a>
           </div>
         </div>
       </section>
