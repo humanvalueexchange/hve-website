@@ -7,7 +7,10 @@ export const metadata: Metadata = {
     default: "Human Value Exchange",
     template: "%s | Human Value Exchange"
   },
-  description: "A framework for building the Five Types of Wealth."
+  description: "A framework for building the Five Types of Wealth.",
+  icons: {
+    icon: "/favicon.ico"
+  }
 };
 
 export default function RootLayout({
