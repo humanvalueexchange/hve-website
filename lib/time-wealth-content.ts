@@ -18,7 +18,7 @@ export const timeWealthOfferings = [
   {
     slug: "ai-time-wealth-roadmap",
     name: "AI & Time Wealth Roadmap",
-    audience: "Growing SMEs",
+    audience: "Growing businesses",
     outcome: "Build a practical blueprint for Time Wealth transformation.",
     deliverables: [
       "Strategic Roadmap",
@@ -85,7 +85,7 @@ export const timeWealthOfferings = [
 
 export const timeWealthWorkshops = [
   {
-    slug: "ai-readiness-for-smb-leaders",
+    slug: "ai-readiness-for-business-leaders",
     name: "AI Readiness for Business Leaders",
     format: "3-hour executive workshop",
     duration: "3 hours",
@@ -98,8 +98,8 @@ export const timeWealthWorkshops = [
     ],
     outcome: "Leave with a grounded view of where AI can create Time Wealth in your organization.",
     ctaLabel: "Send a Workshop Inquiry",
-    ctaHref: "mailto:info@hveglobal.ca?subject=AI%20Readiness%20for%20SMB%20Leaders",
-    futurePath: "/workshops/ai-readiness-for-smb-leaders"
+    ctaHref: "mailto:info@hveglobal.ca?subject=AI%20Readiness%20for%20Business%20Leaders",
+    futurePath: "/workshops/ai-readiness-for-business-leaders"
   },
   {
     slug: "time-wealth",
