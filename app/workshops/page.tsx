@@ -1,28 +1,12 @@
 import Link from "next/link";
 import { SiteHeader } from "@/components/site-header";
+import { TimeWealthWorkshopCard } from "@/components/time-wealth-workshop-card";
+import { timeWealthWorkshops } from "@/lib/time-wealth-content";
 
 export const metadata = {
   title: "Workshops and Services | Human Value Exchange",
-  description: "Practical workshops for building time, productivity, and the Five Types of Wealth."
+  description: "Time Wealth workshops for creating measurable capacity through better systems, AI, and human-centered design."
 };
-
-const audiences = [
-  "SMB owners",
-  "Professionals",
-  "Teams",
-  "Entrepreneurs",
-  "Advisors",
-  "Operators"
-];
-
-const outcomes = [
-  "Better use of Microsoft Copilot",
-  "Practical AI workflows",
-  "Calendar and meeting productivity",
-  "Personal operating system design",
-  "Better time leverage",
-  "Reduced manual work"
-];
 
 const futureTracks = [
   ["Five Types of Wealth Assessment", "See what is working, what is depleted, and where your next investment belongs."],
@@ -42,7 +26,7 @@ export default function WorkshopsPage() {
           <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[#d7a85b]">HVE workshops and services</p>
           <h1 className="mt-6 text-5xl font-semibold leading-tight tracking-tight sm:text-6xl">Turn insight into leverage.</h1>
           <p className="mt-8 max-w-3xl text-xl leading-8 text-[#d7ded8]">
-            HVE workshops help people and teams build more time, better systems, and a stronger foundation across the Five Types of Wealth.
+            HVE workshops are the entry point into Time Wealth transformation. We help leaders see where capacity is being lost, where human judgment matters most, and where practical systems can create more time.
           </p>
           <Link className="mt-10 inline-block rounded-full bg-[#d7a85b] px-6 py-3 font-semibold text-[#10231e] transition hover:bg-[#e5bd7b]" href="/work-with-us">
             Work with us
@@ -53,39 +37,14 @@ export default function WorkshopsPage() {
       <section className="px-6 py-20 sm:py-28">
         <div className="mx-auto max-w-6xl">
           <div className="max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#b27a32]">Featured workshop</p>
-            <h2 className="mt-4 text-4xl font-semibold tracking-tight text-[#10231e] sm:text-5xl">AI Productivity and Time Wealth Workshop</h2>
+            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#b27a32]">Time Wealth workshops</p>
+            <h2 className="mt-4 text-4xl font-semibold tracking-tight text-[#10231e] sm:text-5xl">Start with a practical view of where time goes.</h2>
             <p className="mt-6 text-xl leading-9 text-[#536159]">
-              A practical working session for turning AI tools, better systems, and intentional calendar design into more capacity for high-value work.
+              Workshops turn AI reality, capacity economics, and operational friction into a clear next move for your organization.
             </p>
           </div>
-          <div className="mt-12 grid gap-6 md:grid-cols-[1fr_1.2fr]">
-            <div className="rounded-2xl bg-[#dce8df] p-7">
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#44705c]">What it changes</p>
-              <p className="mt-5 text-lg leading-8 text-[#10231e]">
-                Participants learn to reduce repetitive work, make meetings and calendars more useful, and design a personal operating system that creates better time leverage.
-              </p>
-            </div>
-            <div className="rounded-2xl border border-[#d8ddd5] p-7">
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#b27a32]">What participants leave with</p>
-              <ul className="mt-5 grid gap-3 text-lg leading-8 text-[#536159] sm:grid-cols-2">
-                {outcomes.map((outcome) => <li key={outcome}>+ {outcome}</li>)}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-[#f6f3ec] px-6 py-20 sm:py-24">
-        <div className="mx-auto grid max-w-6xl gap-12 md:grid-cols-[1fr_1.2fr]">
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#b27a32]">Who it is for</p>
-            <h2 className="mt-4 text-4xl font-semibold tracking-tight text-[#10231e] sm:text-5xl">Built for people carrying real responsibility.</h2>
-          </div>
-          <div className="flex flex-wrap content-start gap-3">
-            {audiences.map((audience) => (
-              <span className="rounded-full border border-[#b9c8bc] bg-white px-5 py-3 font-semibold text-[#10231e]" key={audience}>{audience}</span>
-            ))}
+          <div className="mt-12 grid gap-5 md:grid-cols-2">
+            {timeWealthWorkshops.map((workshop) => <TimeWealthWorkshopCard key={workshop.slug} workshop={workshop} />)}
           </div>
         </div>
       </section>

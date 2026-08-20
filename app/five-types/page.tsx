@@ -34,6 +34,22 @@ export default function FiveTypesPage() {
           </div>
         </div>
       </section>
+      <section className="px-6 py-20 sm:py-24">
+        <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-[1fr_1.2fr] md:items-center">
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#b27a32]">Start with Time Wealth</p>
+            <h2 className="mt-4 text-4xl font-semibold tracking-tight text-[#10231e] sm:text-5xl">Time is the foundation of every other form of wealth.</h2>
+          </div>
+          <div className="space-y-5 text-lg leading-8 text-[#536159]">
+            <p>
+              Reclaiming time creates the capacity to invest in your body, mind, relationships, and financial future.
+            </p>
+            <Link className="inline-block font-semibold text-[#10231e] hover:text-[#b27a32]" href="/wealth/time">
+              Explore Time Wealth →
+            </Link>
+          </div>
+        </div>
+      </section>
       <section className="bg-[#dce8df] px-6 py-20 sm:py-24">
         <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-8 md:flex-row md:items-center">
           <div className="max-w-2xl">

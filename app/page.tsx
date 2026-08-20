@@ -131,6 +131,30 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="px-6 py-20 sm:py-28">
+        <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-[1fr_1.2fr] md:items-center">
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#b27a32]">Time Wealth</p>
+            <h2 className="mt-4 text-4xl font-semibold tracking-tight text-[#10231e] sm:text-5xl">Reclaim Your Time Wealth.</h2>
+          </div>
+          <div>
+            <div className="space-y-5 text-lg leading-8 text-[#536159]">
+              <p>Most business owners don&apos;t need an AI strategy.</p>
+              <p>They need more time.</p>
+              <p>
+                Human Value Exchange helps organizations identify where time is being lost, prioritize the highest-value opportunities for improvement, and implement practical systems that create measurable capacity.
+              </p>
+              <p>
+                Through workshops, roadmaps, Microsoft Copilot enablement, workflow redesign, and business agents, we help organizations transform operational friction into Time Wealth.
+              </p>
+            </div>
+            <Link className="mt-8 inline-block rounded-full bg-[#10231e] px-6 py-3 font-semibold text-white transition hover:bg-[#24483a]" href="/wealth/time">
+              Learn About Time Wealth
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <section className="bg-[#10231e] px-6 py-20 text-[#f6f3ec] sm:py-28">
         <div className="mx-auto grid max-w-6xl gap-12 md:grid-cols-[1fr_1.2fr] md:items-center">
           <div>
@@ -155,7 +179,7 @@ export default function Home() {
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#b27a32]">Latest thinking</p>
             <h2 className="mt-4 text-4xl font-semibold tracking-tight text-[#10231e] sm:text-5xl">Latest from Human Value Exchange</h2>
             <p className="mt-5 text-lg leading-8 text-[#536159]">
-              Essays and field notes on sovereignty, AI productivity, health, wealth, relationships, and the future of human flourishing.
+              Essays and field notes on Time Wealth, sovereignty, health, wealth, relationships, and the future of human flourishing.
             </p>
           </div>
           <a className="shrink-0 rounded-full border border-[#10231e] px-6 py-3 font-semibold text-[#10231e] transition hover:bg-[#10231e] hover:text-white" href="https://humanvalueexchange.blog">

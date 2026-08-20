@@ -61,7 +61,7 @@ export default function AboutPage() {
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#b27a32]">The founder lens</p>
             <h2 className="mt-4 text-4xl font-semibold tracking-tight text-[#10231e] sm:text-5xl">From self-improvement to self-mastery.</h2>
             <p className="mt-6 text-lg leading-8 text-[#536159]">
-              HVE emerged from lived experience across technology, AI productivity, wellness, financial education, and personal transformation. The work is grounded in a simple question: how do practical systems help people become more capable, more free, and more fully themselves?
+              HVE emerged from lived experience across technology, AI-enabled workflows, wellness, financial education, and personal transformation. The work is grounded in a simple question: how do practical systems help people become more capable, more free, and more fully themselves?
             </p>
           </div>
           <div className="mt-12 grid gap-5 md:grid-cols-3">
