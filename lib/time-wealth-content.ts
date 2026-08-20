@@ -2,7 +2,7 @@ export const timeWealthOfferings = [
   {
     slug: "time-wealth-discovery-workshop",
     name: "Time Wealth Discovery Workshop",
-    audience: "SMB owners and leadership teams",
+    audience: "Business owners and leadership teams",
     outcome: "Identify where time is being lost and where capacity can be reclaimed.",
     deliverables: [
       "Time Wealth Score",
@@ -86,10 +86,10 @@ export const timeWealthOfferings = [
 export const timeWealthWorkshops = [
   {
     slug: "ai-readiness-for-smb-leaders",
-    name: "AI Readiness for SMB Leaders",
+    name: "AI Readiness for Business Leaders",
     format: "3-hour executive workshop",
     duration: "3 hours",
-    audience: "SMB owners and leadership teams",
+    audience: "Business owners and leadership teams",
     focus: [
       "AI reality vs. hype",
       "Capacity economics",
