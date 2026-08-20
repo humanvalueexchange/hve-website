@@ -21,7 +21,7 @@ export function SiteFooter() {
           <a className="hover:text-white" href="https://humanvalueexchange.blog">Blog</a>
           <Link className="hover:text-white" href="/work-with-us">Work with us</Link>
           <Link className="hover:text-white" href="/life-os">HVE Life OS</Link>
-          <a className="hover:text-white" href="mailto:hello@humanvalueexchange.com">Contact HVE</a>
+          <a className="hover:text-white" href="mailto:info@hveglobal.ca">Contact HVE</a>
         </nav>
       </div>
       <div className="mx-auto mt-10 max-w-6xl border-t border-[#365448] pt-5 text-sm text-[#8ea196]">

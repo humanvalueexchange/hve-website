@@ -31,7 +31,7 @@ export default function WorkWithUsPage() {
           <p className="mt-8 max-w-2xl text-lg leading-8 text-[#536159]">
             Start with a conversation about where time is being lost, what capacity can be reclaimed, and the next Time Wealth investment your organization is ready to make.
           </p>
-          <a className="mt-10 inline-block rounded-full bg-[#10231e] px-6 py-3 font-semibold text-white transition hover:bg-[#24483a]" href="mailto:hello@humanvalueexchange.com?subject=Discovery%20Call">
+          <a className="mt-10 inline-block rounded-full bg-[#10231e] px-6 py-3 font-semibold text-white transition hover:bg-[#24483a]" href="mailto:info@hveglobal.ca?subject=Discovery%20Call">
             Book a discovery call
           </a>
         </div>

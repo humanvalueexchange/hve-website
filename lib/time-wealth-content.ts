@@ -11,7 +11,7 @@ export const timeWealthOfferings = [
       "Top 10 Improvement Opportunities"
     ],
     ctaLabel: "Book a Discovery Session",
-    ctaHref: "mailto:hello@humanvalueexchange.com?subject=Time%20Wealth%20Discovery%20Workshop",
+    ctaHref: "mailto:info@hveglobal.ca?subject=Time%20Wealth%20Discovery%20Workshop",
     futurePath: "/time-wealth-discovery-workshop",
     future: false
   },
@@ -27,7 +27,7 @@ export const timeWealthOfferings = [
       "ROI Framework"
     ],
     ctaLabel: "Explore the Roadmap",
-    ctaHref: "mailto:hello@humanvalueexchange.com?subject=AI%20%26%20Time%20Wealth%20Roadmap",
+    ctaHref: "mailto:info@hveglobal.ca?subject=AI%20%26%20Time%20Wealth%20Roadmap",
     futurePath: "/ai-time-wealth-roadmap",
     future: false
   },
@@ -43,7 +43,7 @@ export const timeWealthOfferings = [
       "Team Knowledge Assistants"
     ],
     ctaLabel: "Accelerate Adoption",
-    ctaHref: "mailto:hello@humanvalueexchange.com?subject=Copilot%20First%20Accelerator",
+    ctaHref: "mailto:info@hveglobal.ca?subject=Copilot%20First%20Accelerator",
     futurePath: "/copilot-first-accelerator",
     future: false
   },
@@ -60,7 +60,7 @@ export const timeWealthOfferings = [
       "KPI Tracking"
     ],
     ctaLabel: "Learn More",
-    ctaHref: "mailto:hello@humanvalueexchange.com?subject=Time%20Wealth%20Transformation%20Program",
+    ctaHref: "mailto:info@hveglobal.ca?subject=Time%20Wealth%20Transformation%20Program",
     futurePath: "/time-wealth-transformation",
     future: false
   },
@@ -77,7 +77,7 @@ export const timeWealthOfferings = [
       "Monthly Reviews"
     ],
     ctaLabel: "See the Operating System",
-    ctaHref: "mailto:hello@humanvalueexchange.com?subject=HVE%20Time%20Wealth%20Operating%20System",
+    ctaHref: "mailto:info@hveglobal.ca?subject=HVE%20Time%20Wealth%20Operating%20System",
     futurePath: "/time-wealth-operating-system",
     future: true
   }
@@ -98,7 +98,7 @@ export const timeWealthWorkshops = [
     ],
     outcome: "Leave with a grounded view of where AI can create Time Wealth in your organization.",
     ctaLabel: "Send a Workshop Inquiry",
-    ctaHref: "mailto:hello@humanvalueexchange.com?subject=AI%20Readiness%20for%20SMB%20Leaders",
+    ctaHref: "mailto:info@hveglobal.ca?subject=AI%20Readiness%20for%20SMB%20Leaders",
     futurePath: "/workshops/ai-readiness-for-smb-leaders"
   },
   {
@@ -116,7 +116,7 @@ export const timeWealthWorkshops = [
     ],
     outcome: "Create a practical blueprint for reclaiming capacity and protecting high-value human work.",
     ctaLabel: "Send a Workshop Inquiry",
-    ctaHref: "mailto:hello@humanvalueexchange.com?subject=The%20Time%20Wealth%20Workshop",
+    ctaHref: "mailto:info@hveglobal.ca?subject=The%20Time%20Wealth%20Workshop",
     futurePath: "/workshops/time-wealth"
   },
   {
@@ -134,7 +134,7 @@ export const timeWealthWorkshops = [
     ],
     outcome: "Turn familiar Microsoft 365 work into a first measurable Time Wealth win with Copilot.",
     ctaLabel: "Send a Workshop Inquiry",
-    ctaHref: "mailto:hello@humanvalueexchange.com?subject=Copilot%20in%20a%20Day",
+    ctaHref: "mailto:info@hveglobal.ca?subject=Copilot%20in%20a%20Day",
     futurePath: "/workshops/copilot-in-a-day"
   },
   {
@@ -151,7 +151,7 @@ export const timeWealthWorkshops = [
     ],
     outcome: "Design and scope a first business agent around a real operational opportunity.",
     ctaLabel: "Send a Workshop Inquiry",
-    ctaHref: "mailto:hello@humanvalueexchange.com?subject=Build%20Your%20First%20Business%20Agent",
+    ctaHref: "mailto:info@hveglobal.ca?subject=Build%20Your%20First%20Business%20Agent",
     futurePath: "/workshops/build-your-first-business-agent"
   }
 ] as const;

@@ -100,7 +100,7 @@ export default function WealthPage({ params }: { params: { slug: string } }) {
               <div className="space-y-5 text-lg leading-8 text-[#d7ded8]">
                 <p>Customer Zero is currently being developed and tested inside Human Value Exchange.</p>
                 <p>Future capabilities include Time Wealth Dashboards, Workforce Capacity Analytics, AI Opportunity Tracking, Agent Performance Monitoring, and Five Types of Wealth Integration.</p>
-                <a className="inline-block font-semibold text-[#d7a85b] hover:text-[#e5bd7b]" href="mailto:hello@humanvalueexchange.com?subject=HVE%20Time%20Wealth%20Operating%20System">
+                <a className="inline-block font-semibold text-[#d7a85b] hover:text-[#e5bd7b]" href="mailto:info@hveglobal.ca?subject=HVE%20Time%20Wealth%20Operating%20System">
                   Register your interest →
                 </a>
               </div>
