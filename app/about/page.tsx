@@ -3,35 +3,35 @@ import { SiteHeader } from "@/components/site-header";
 
 export const metadata = {
   title: "About | Human Value Exchange",
-  description: "Meet the people stewarding the Five Types of Wealth framework."
+  description: "Meet the people building Human Value Exchange around the Five Types of Wealth framework."
 };
 
-const wealthStewards = [
-  ["Time Wealth", "Hans Westphal & Wolfgang Westphal", "The foundation for every other form of wealth.", "bg-[#dce8df]"],
-  ["Physical Wealth", "Alan Warner", "Health, energy, resilience, and sustainable performance.", "bg-white"],
-  ["Mental Wealth", "Emerging", "Clarity, resilience, purpose, and inner capacity.", "bg-white"],
-  ["Social Wealth", "Emerging", "Relationships, trust, contribution, and belonging.", "bg-white"],
-  ["Financial Wealth", "Brian Bogaert", "Protection, cash flow, ownership, and meaningful choice.", "bg-white"]
+const wealthTypes = [
+  ["Time Wealth", "The foundation for every other form of wealth. Create greater freedom, focus, and capacity by using time more intentionally.", "bg-[#dce8df]"],
+  ["Physical Wealth", "Health, energy, resilience, and sustainable performance that support a strong and capable life.", "bg-white"],
+  ["Mental Wealth", "Clarity, purpose, self-mastery, learning, and the inner capacity to navigate life well.", "bg-white"],
+  ["Social Wealth", "Relationships, trust, contribution, community, and a meaningful sense of belonging.", "bg-white"],
+  ["Financial Wealth", "Resources, resilience, ownership, and meaningful choice that support greater freedom and sovereignty.", "bg-white"]
 ] as const;
 
 const stewards = [
   {
     name: "Hans H. Westphal",
-    role: "Founder | Vision & Time Wealth",
+    role: "Founder | Vision & Human Value Exchange",
     paragraphs: [
       "Hans Westphal is a technology strategist, business advisor, and founder of Human Value Exchange.",
       "Throughout his career he has worked at the intersection of business transformation, emerging technology, and human potential, helping organizations understand how technology can create meaningful value.",
-      "His current focus is helping individuals and organizations create Time Wealth through AI, Microsoft Copilot, workflow optimization, better systems, and human-centered design.",
+      "His current focus is helping individuals and organizations create greater freedom and capacity through AI, Microsoft Copilot, workflow optimization, better systems, and human-centered design.",
       "Hans founded Human Value Exchange after recognizing that many of society's challenges stem from an incomplete definition of wealth. While financial assets matter, lasting prosperity also depends on time, health, purpose, relationships, and personal freedom.",
       "Through HVE, Hans is working to create a practical framework that helps people strengthen all five forms of wealth and build more intentional, resilient, and abundant lives."
     ]
   },
   {
     name: "Wolfgang Westphal",
-    role: "Co-Founder | Time Wealth",
+    role: "Co-Founder | Practical Transformation",
     paragraphs: [
       "Wolfgang Westphal helps individuals and organizations create greater capacity through disciplined execution, modern productivity practices, and practical technology adoption.",
-      "As Co-Founder of Human Value Exchange, Wolfgang supports the Time Wealth pillar, helping people reduce friction, improve workflows, and reclaim time for the things that matter most.",
+      "As Co-Founder of Human Value Exchange, Wolfgang helps people reduce friction, improve workflows, and reclaim capacity for the things that matter most.",
       "His approach combines practical implementation, accountability, and continuous improvement to create meaningful and sustainable change."
     ]
   },
@@ -46,16 +46,15 @@ const stewards = [
       <>More than a decade ago, Brian founded <strong className="font-semibold text-[#10231e]">Next Level Success</strong>, a wealth coaching practice focused on helping individuals take greater ownership of their financial lives and create lasting freedom. He remains deeply committed to mentoring clients and sharing practical strategies that help people move from intention to implementation.</>,
       "Like many people, reading Rich Dad Poor Dad changed Brian's perspective on life. Unlike most, he immediately applied those lessons through real estate investing and ultimately achieved the freedom to leave traditional employment behind. Along that journey, some of his most influential lessons centered on personal responsibility, integrity, creating value, and building systems that generate freedom rather than simply exchanging time for money.",
       "Today, Brian lives with his family on an acreage outside Calgary, working from the home he once imagined, driving the car he once dreamed about, and enjoying the life he intentionally designed.",
-      <>Within Human Value Exchange, Brian serves as a guide for <strong className="font-semibold text-[#10231e]">Financial Wealth</strong>. He believes that true wealth is not measured solely by money but by the freedom, choices, and opportunities money can help create. His passion is helping others develop the mindset, habits, and knowledge needed to build a life of greater sovereignty and possibility.</>,
+      <>Within Human Value Exchange, Brian contributes his experience in freedom, mentorship, personal development, wealth education, and intentional living to the broader mission. Like every HVE contributor, his insights may support and connect across all Five Types of Wealth. He believes that true wealth is not measured solely by money but by the freedom, choices, and opportunities money can help create. His passion is helping others develop the mindset, habits, and knowledge needed to build a life of greater sovereignty and possibility.</>,
       <>Brian often jokes that he began life as &quot;Mr. Anderson&quot; from The Matrix, searching for something more, and eventually became &quot;Morpheus,&quot; dedicated to helping others discover what freedom means for themselves. For him, Human Value Exchange is the perfect expression of mentorship: people sharing what they have learned with one another so that everyone can grow, benefit, and thrive.</>
     ]
   },
   {
     name: "Alan Warner",
-    role: "Physical Wealth Lead",
+    role: "Contributor | Health & Sustainable Performance",
     paragraphs: [
-      "Alan Warner leads the Physical Wealth pillar within Human Value Exchange.",
-      "His work focuses on helping people improve health, energy, resilience, and sustainable performance through practical lifestyle change.",
+      "Alan Warner contributes practical experience in helping people improve health, energy, resilience, and sustainable performance through practical lifestyle change.",
       "Full profile coming soon."
     ]
   }
@@ -92,14 +91,16 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-            {wealthStewards.map(([type, steward, description, background]) => (
+            {wealthTypes.map(([type, description, background]) => (
               <article className={`rounded-2xl p-7 ${background}`} key={type}>
                 <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#44705c]">{type}</p>
-                <h3 className="mt-6 text-2xl font-semibold text-[#10231e]">{steward}</h3>
-                <p className="mt-4 leading-7 text-[#536159]">{description}</p>
+                <p className="mt-6 leading-7 text-[#536159]">{description}</p>
               </article>
             ))}
           </div>
+          <p className="mt-10 max-w-4xl text-lg leading-8 text-[#536159]">
+            The Five Types of Wealth are a shared framework, not individual portfolios. Every contributor can bring experience, insight, and value to every pillar as Human Value Exchange grows.
+          </p>
           <p className="mt-10 max-w-4xl text-lg leading-8 text-[#536159]">
             While all five forms of wealth matter, Human Value Exchange currently leads with Time Wealth because time is the foundation from which physical health, mental clarity, relationships, and financial resilience can grow.
           </p>
@@ -109,7 +110,7 @@ export default function AboutPage() {
       <section className="bg-[#dce8df] px-6 py-20 sm:py-28">
         <div className="mx-auto max-w-6xl">
           <div className="max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#44705c]">The stewards</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#44705c]">The people behind HVE</p>
             <h2 className="mt-4 text-4xl font-semibold tracking-tight text-[#10231e] sm:text-5xl">People who turn the framework into practice.</h2>
           </div>
           <div className="mt-12 space-y-6">
