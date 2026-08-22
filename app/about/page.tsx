@@ -28,11 +28,14 @@ const stewards = [
   },
   {
     name: "Wolfgang Westphal",
-    role: "Co-Founder | Practical Transformation",
+    role: <><strong className="font-semibold text-[#10231e]">Operations</strong>, <strong className="font-semibold text-[#10231e]">Growth</strong> &amp; <strong className="font-semibold text-[#10231e]">Implementation</strong> Associate</>,
     paragraphs: [
-      "Wolfgang Westphal helps individuals and organizations create greater capacity through disciplined execution, modern productivity practices, and practical technology adoption.",
-      "As Co-Founder of Human Value Exchange, Wolfgang helps people reduce friction, improve workflows, and reclaim capacity for the things that matter most.",
-      "His approach combines practical implementation, accountability, and continuous improvement to create meaningful and sustainable change."
+      "Wolfgang is passionate about helping people create healthier, more productive, and more intentional lives through a combination of personal development, technology, and practical action.",
+      "His journey began with a strong interest in health, fitness, and human performance. Through studying nutrition, wellness, behavior change, and sustainable habits, he developed a deep appreciation for the connection between physical well-being, personal growth, and long-term success.",
+      "As his interests evolved, Wolfgang became increasingly fascinated by technology and the ways digital tools can help people and organizations work more effectively. He is currently completing the Computer Programming – Low-Code Development diploma program at George Brown Polytechnic, where he is building skills in software development, process automation, user experience design, data management, systems integration, and modern business technology solutions. The program emphasizes practical problem-solving, digital transformation, and low-code technologies, including the Microsoft ecosystem.",
+      <>At <strong className="font-semibold text-[#10231e]">Human Value Exchange</strong>, Wolfgang supports a wide range of initiatives, including digital marketing, content development, operational improvement, workshop delivery, automation, and implementation projects. He enjoys helping transform ideas into practical systems, experiences, and solutions that create meaningful value for individuals, families, and organizations.</>,
+      "Wolfgang believes that learning creates the greatest impact when it is paired with action. Whether supporting a workshop, building a process, developing digital solutions, or contributing to community initiatives, he is motivated by helping people make steady progress toward the life they want to create.",
+      "He brings curiosity, adaptability, and a commitment to continuous improvement to everything he does. As Human Value Exchange grows, Wolfgang is excited to help bridge the gap between vision and execution, ensuring that ideas become tangible outcomes that support greater freedom, capability, and human flourishing."
     ]
   },
   {
