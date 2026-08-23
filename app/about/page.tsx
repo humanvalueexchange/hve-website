@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { SiteHeader } from "@/components/site-header";
 
 export const metadata = {
@@ -17,6 +18,7 @@ const wealthTypes = [
 const stewards = [
   {
     name: "Hans H. Westphal",
+    image: "/hans-linkedin-pic.jpg",
     role: "Founder | Vision & Human Value Exchange",
     paragraphs: [
       "Hans Westphal is a technology strategist, business advisor, and founder of Human Value Exchange.",
@@ -28,6 +30,7 @@ const stewards = [
   },
   {
     name: "Wolfgang Westphal",
+    image: "/wolfgang-linkedin-pic.jpg",
     role: <><strong className="font-semibold text-[#10231e]">Operations</strong>, <strong className="font-semibold text-[#10231e]">Growth</strong> &amp; <strong className="font-semibold text-[#10231e]">Implementation</strong> Associate</>,
     paragraphs: [
       "Wolfgang is passionate about helping people create healthier, more productive, and more intentional lives through a combination of personal development, technology, and practical action.",
@@ -40,6 +43,7 @@ const stewards = [
   },
   {
     name: "Brian Bogaert",
+    image: "/brian-linkedin-pic.jpg",
     role: "Chief Freedom Officer",
     paragraphs: [
       <>Brian's gift is helping people understand complex ideas, especially money, investing, and personal <strong className="font-semibold text-[#10231e]">Freedom</strong>, in ways that are relatable, practical, and actionable.</>,
@@ -55,6 +59,7 @@ const stewards = [
   },
   {
     name: "Alan Warner",
+    image: "/alan-linkedin-pic.jpg",
     role: "Contributor | Health & Sustainable Performance",
     paragraphs: [
       "Alan Warner contributes practical experience in helping people improve health, energy, resilience, and sustainable performance through practical lifestyle change.",
@@ -120,6 +125,13 @@ export default function AboutPage() {
             {stewards.map((steward, index) => (
               <article className="grid gap-8 rounded-2xl bg-white p-7 sm:p-10 md:grid-cols-[minmax(190px,0.7fr)_1.5fr] md:gap-12" key={steward.name}>
                 <div>
+                  <Image
+                    alt={`${steward.name} portrait`}
+                    className="mb-6 aspect-square w-40 rounded-2xl object-cover"
+                    height={160}
+                    src={steward.image}
+                    width={160}
+                  />
                   <p className="text-sm font-semibold text-[#b27a32]">0{index + 1}</p>
                   <h3 className="mt-6 text-3xl font-semibold tracking-tight text-[#10231e]">{steward.name}</h3>
                   <p className="mt-3 font-semibold text-[#44705c]">{steward.role}</p>
