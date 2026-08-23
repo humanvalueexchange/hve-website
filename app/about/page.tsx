@@ -21,11 +21,13 @@ const stewards = [
     image: "/hans-linkedin-pic.jpg",
     role: "Founder | Vision & Human Value Exchange",
     paragraphs: [
-      "Hans Westphal is a technology strategist, business advisor, and founder of Human Value Exchange.",
-      "Throughout his career he has worked at the intersection of business transformation, emerging technology, and human potential, helping organizations understand how technology can create meaningful value.",
-      "His current focus is helping individuals and organizations create greater freedom and capacity through AI, Microsoft Copilot, workflow optimization, better systems, and human-centered design.",
-      "Hans founded Human Value Exchange after recognizing that many of society's challenges stem from an incomplete definition of wealth. While financial assets matter, lasting prosperity also depends on time, health, purpose, relationships, and personal freedom.",
-      "Through HVE, Hans is working to create a practical framework that helps people strengthen all five forms of wealth and build more intentional, resilient, and abundant lives."
+      "Hans Westphal is the founder of Human Value Exchange. Over a career spanning more than twenty-five years, he moved from writing code on the developer side of the industry to building business and financial systems for some of the world's largest companies — a path that taught him what technology can do, and exactly where it stops short.",
+      "That experience led him to the realization that now drives his life's work: many of society's challenges stem from an incomplete definition of wealth. Financial assets matter, but lasting prosperity also depends on time, health, purpose, relationships, and personal freedom. You can optimize your portfolio and still feel poor. Human Value Exchange exists to correct that imbalance.",
+      "He co-founded the company with his son Wolfgang, and Hans plays the founder's role in a true startup — getting everything going across all the pillars. That means standing up the whole system rather than running a single practice: the framework, the operating model, the products, and the way it all gets delivered. His job is to build the machine so every part of Human Value Exchange serves the whole human being.",
+      "In parallel, Hans has walked a quieter, longer path — one he is only now able to name. For nearly fifteen years he has studied with Mama Laurie in the 7th Ray Mystery School tradition, and today holds a Guide's role in the school's teacher lineage; his daily meditation and journaling, now more than six hundred sessions, is the quiet discipline behind everything else. But the deepest lesson did not arrive on the mat. For a long time he was looking for his purpose in the path of initiation; it was, all along, in the path of relationship. And there his life is lived.",
+      "For thirty-five years Hans has walked alongside his wife Jenna, who he now believes has been his greatest strength the entire time — and within that, he and Jenna have raised their two children, Wolfgang, now twenty-two, and Willow, twenty. This is the householder path: spiritual growth, family, health, and service woven into one life. As he wrote in his latest letter to Mama Laurie: \"I am finally beginning to see the garden.\"",
+      "Within Human Value Exchange, Hans turns the Five Types of Wealth into something people can actually live — a practical, repeatable framework that helps individuals and families build more intentional, resilient, and abundant lives.",
+      "For Hans, the point was never to win one part of the game. It was to live the whole thing."
     ]
   },
   {
