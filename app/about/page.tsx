@@ -31,19 +31,6 @@ const stewards = [
     ]
   },
   {
-    name: "Wolfgang Westphal",
-    image: "/wolfgang-linkedin-pic.jpg",
-    role: <><strong className="font-semibold text-[#10231e]">Operations</strong>, <strong className="font-semibold text-[#10231e]">Growth</strong> &amp; <strong className="font-semibold text-[#10231e]">Implementation</strong> Associate</>,
-    paragraphs: [
-      "Wolfgang Westphal is driven by a lifelong interest in personal growth and the practical systems that help people live healthier, more productive, and more intentional lives.",
-      "His journey began with a deep interest in self-discovery. At sixteen, he began training with a set of weights in his family basement, teaching himself through books, research, and experimentation. What started as a pursuit of physical strength became a lifelong commitment to growth, discipline, and continuous improvement.",
-      "That curiosity led him to explore nutrition, wellness, behavior change, and human performance, developing an appreciation for the connection between physical health and long-term success. As his knowledge grew, he began coaching and training clients of his own, helping others improve their health and performance before putting that work on pause to focus on his post-secondary studies.",
-      "Over time, his interests expanded into technology and the ways digital tools can help people work and live more effectively. He is currently completing the Computer Programming – Low-Code Development diploma program at George Brown Polytechnic, building skills in software development, automation, systems integration, and modern business technology.",
-      <>At <strong className="font-semibold text-[#10231e]">Human Value Exchange</strong>, Wolfgang contributes to initiatives focused on Time Wealth, helping turn ideas into practical systems, processes, and solutions that create meaningful value for individuals, families, and organizations. Time Wealth is currently the first pillar being developed within the broader Five Types of Wealth framework.</>,
-      "Wolfgang believes learning creates its greatest impact when paired with action. Whether improving a process, developing a digital solution, or supporting a community initiative, he is motivated by helping people make steady progress toward the life they want to create. He brings curiosity, adaptability, and a commitment to continuous improvement as he helps turn ideas into practical outcomes that support greater freedom, capability, and human flourishing. Human Value Exchange's mission is centered on helping people build freedom, sovereignty, self-mastery, and human flourishing through the Five Types of Wealth."
-    ]
-  },
-  {
     name: "Brian Bogaert",
     image: "/brian-linkedin-pic.jpg",
     role: "Chief Freedom Officer",
@@ -66,6 +53,19 @@ const stewards = [
     paragraphs: [
       "Alan Warner contributes practical experience in helping people improve health, energy, resilience, and sustainable performance through practical lifestyle change.",
       "Full profile coming soon."
+    ]
+  },
+  {
+    name: "Wolfgang Westphal",
+    image: "/wolfgang-linkedin-pic.jpg",
+    role: <><strong className="font-semibold text-[#10231e]">Operations</strong>, <strong className="font-semibold text-[#10231e]">Growth</strong> &amp; <strong className="font-semibold text-[#10231e]">Implementation</strong> Associate</>,
+    paragraphs: [
+      "Wolfgang Westphal is driven by a lifelong interest in personal growth and the practical systems that help people live healthier, more productive, and more intentional lives.",
+      "His journey began with a deep interest in self-discovery. At sixteen, he began training with a set of weights in his family basement, teaching himself through books, research, and experimentation. What started as a pursuit of physical strength became a lifelong commitment to growth, discipline, and continuous improvement.",
+      "That curiosity led him to explore nutrition, wellness, behavior change, and human performance, developing an appreciation for the connection between physical health and long-term success. As his knowledge grew, he began coaching and training clients of his own, helping others improve their health and performance before putting that work on pause to focus on his post-secondary studies.",
+      "Over time, his interests expanded into technology and the ways digital tools can help people work and live more effectively. He is currently completing the Computer Programming – Low-Code Development diploma program at George Brown Polytechnic, building skills in software development, automation, systems integration, and modern business technology.",
+      <>At <strong className="font-semibold text-[#10231e]">Human Value Exchange</strong>, Wolfgang contributes to initiatives focused on Time Wealth, helping turn ideas into practical systems, processes, and solutions that create meaningful value for individuals, families, and organizations. Time Wealth is currently the first pillar being developed within the broader Five Types of Wealth framework.</>,
+      "Wolfgang believes learning creates its greatest impact when paired with action. Whether improving a process, developing a digital solution, or supporting a community initiative, he is motivated by helping people make steady progress toward the life they want to create. He brings curiosity, adaptability, and a commitment to continuous improvement as he helps turn ideas into practical outcomes that support greater freedom, capability, and human flourishing. Human Value Exchange's mission is centered on helping people build freedom, sovereignty, self-mastery, and human flourishing through the Five Types of Wealth."
     ]
   }
 ];
