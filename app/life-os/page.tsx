@@ -46,6 +46,31 @@ export default function LifeOsPage() {
         </div>
       </section>
 
+      <section className="bg-[#f6f3ec] px-6 py-20 sm:py-28">
+        <div className="mx-auto max-w-6xl">
+          <div className="max-w-3xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#b27a32]">What we are exploring</p>
+            <h2 className="mt-4 text-4xl font-semibold tracking-tight text-[#10231e] sm:text-5xl">Start with useful signals, not more noise.</h2>
+            <p className="mt-6 text-lg leading-8 text-[#536159]">
+              Future development will be guided by real practice, user control, and evidence about what helps people make better decisions.
+            </p>
+          </div>
+          <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+            {[
+              ["Simple assessments", "Ways to notice patterns across the five forms of wealth without reducing a life to one score."],
+              ["Review rhythms", "Lightweight practices that help people learn from their choices and adjust over time."],
+              ["Human guidance", "Coaching, conversation, and context alongside any future technology."],
+              ["Privacy and control", "Clear ownership of personal information before automation or scale."]
+            ].map(([title, description]) => (
+              <article className="rounded-2xl border border-[#d8ddd5] bg-white p-7" key={title}>
+                <h3 className="text-2xl font-semibold text-[#10231e]">{title}</h3>
+                <p className="mt-4 leading-7 text-[#536159]">{description}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="bg-[#dce8df] px-6 py-20 sm:py-28">
         <div className="mx-auto max-w-6xl">
           <div className="max-w-3xl">

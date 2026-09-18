@@ -17,10 +17,12 @@ export function SiteFooter() {
         </div>
         <nav aria-label="Footer navigation" className="grid grid-cols-2 gap-x-6 gap-y-4 text-sm font-semibold text-[#d7ded8] sm:grid-cols-3">
           <Link className="hover:text-white" href="/five-types">Five Types of Wealth</Link>
+          <Link className="hover:text-white" href="/services">Services</Link>
           <Link className="hover:text-white" href="/workshops">Workshops</Link>
           <a className="hover:text-white" href="https://humanvalueexchange.blog">Blog</a>
           <Link className="hover:text-white" href="/work-with-us">Work with us</Link>
           <Link className="hover:text-white" href="/life-os">HVE Life OS</Link>
+          <Link className="hover:text-white" href="/faq">FAQ</Link>
           <a className="hover:text-white" href="mailto:info@hveglobal.ca">Contact HVE</a>
         </nav>
       </div>

@@ -56,9 +56,14 @@ export default function FiveTypesPage() {
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#44705c]">Make it practical</p>
             <h2 className="mt-4 text-4xl font-semibold tracking-tight text-[#10231e]">See where your next investment belongs.</h2>
           </div>
-          <Link className="rounded-full bg-[#10231e] px-6 py-3 font-semibold text-white transition hover:bg-[#24483a]" href="/workshops">
-            Explore workshops
-          </Link>
+          <div className="flex flex-wrap gap-4">
+            <Link className="rounded-full bg-[#10231e] px-6 py-3 font-semibold text-white transition hover:bg-[#24483a]" href="/services">
+              Explore how HVE helps
+            </Link>
+            <Link className="rounded-full border border-[#10231e] px-6 py-3 font-semibold text-[#10231e] transition hover:bg-[#10231e] hover:text-white" href="/workshops">
+              Explore workshops
+            </Link>
+          </div>
         </div>
       </section>
     </main>
