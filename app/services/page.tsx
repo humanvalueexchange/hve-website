@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { SiteHeader } from "@/components/site-header";
-import { audiencePathways, engagementSteps, serviceOfferings } from "@/lib/site-content";
+import { audiencePathways, engagementSteps, proofItems, serviceOfferings } from "@/lib/site-content";
 
 export const metadata = {
   title: "How HVE Helps | Human Value Exchange",
@@ -74,6 +74,30 @@ export default function ServicesPage() {
                 <p className="text-sm font-semibold text-[#44705c]">{step.number}</p>
                 <h3 className="mt-5 text-2xl font-semibold text-[#10231e]">{step.name}</h3>
                 <p className="mt-4 leading-7 text-[#536159]">{step.description}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#f6f3ec] px-6 py-20 sm:py-24">
+        <div className="mx-auto max-w-6xl">
+          <div className="max-w-3xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#b27a32]">Grounded in practice</p>
+            <h2 className="mt-4 text-4xl font-semibold tracking-tight text-[#10231e] sm:text-5xl">A framework shaped by lived experience.</h2>
+            <p className="mt-6 text-lg leading-8 text-[#536159]">
+              HVE is built through practice, relationships, education, and honest reflection. We will add verified stories and outcomes as they become available.
+            </p>
+          </div>
+          <div className="mt-10 grid gap-5 md:grid-cols-2">
+            {proofItems.map((item) => (
+              <article className="rounded-2xl border border-[#d8ddd5] bg-white p-7" key={item.title}>
+                <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#44705c]">{item.label}</p>
+                <h3 className="mt-4 text-2xl font-semibold text-[#10231e]">{item.title}</h3>
+                <p className="mt-4 leading-7 text-[#536159]">{item.description}</p>
+                <a className="mt-6 inline-block font-semibold text-[#10231e] hover:text-[#b27a32]" href={item.href}>
+                  {item.linkLabel} →
+                </a>
               </article>
             ))}
           </div>

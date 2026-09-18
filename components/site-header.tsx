@@ -15,6 +15,7 @@ export function SiteHeader() {
           <Link className="hover:text-[#b27a32]" href="/services">How We Help</Link>
           <Link className="hover:text-[#b27a32]" href="/workshops">Workshops</Link>
           <a className="hover:text-[#b27a32]" href="https://humanvalueexchange.blog">Blog</a>
+          <Link className="hover:text-[#b27a32]" href="/faq">FAQ</Link>
           <Link className="w-full rounded-full bg-[#10231e] px-4 py-2 text-center text-white hover:bg-[#24483a] sm:w-auto" href="/work-with-us">
             Work with us
           </Link>

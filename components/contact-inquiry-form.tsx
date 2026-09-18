@@ -11,6 +11,15 @@ const inquiryOptions = [
   "General inquiry"
 ] as const;
 
+const audienceOptions = [
+  "Individual",
+  "Family",
+  "Entrepreneur or business owner",
+  "Professional or team",
+  "Coach, advisor, or partner",
+  "Other"
+] as const;
+
 export function ContactInquiryForm() {
   const [submitted, setSubmitted] = useState(false);
 
@@ -20,10 +29,11 @@ export function ContactInquiryForm() {
     const name = String(form.get("name") ?? "").trim();
     const email = String(form.get("email") ?? "").trim();
     const interest = String(form.get("interest") ?? "").trim();
+    const audience = String(form.get("audience") ?? "").trim();
     const message = String(form.get("message") ?? "").trim();
 
     const subject = encodeURIComponent(`${interest || "HVE inquiry"} from ${name || "website visitor"}`);
-    const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nInterest: ${interest}\n\n${message}`);
+    const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nAudience: ${audience}\nInterest: ${interest}\n\n${message}`);
 
     window.location.href = `mailto:info@hveglobal.ca?subject=${subject}&body=${body}`;
     setSubmitted(true);
@@ -45,6 +55,12 @@ export function ContactInquiryForm() {
         I am interested in
         <select className="mt-2 w-full rounded-xl border border-[#cbd5ce] bg-white px-4 py-3 font-normal outline-none transition focus:border-[#44705c] focus:ring-2 focus:ring-[#dce8df]" defaultValue={inquiryOptions[0]} name="interest">
           {inquiryOptions.map((option) => <option key={option}>{option}</option>)}
+        </select>
+      </label>
+      <label className="block text-sm font-semibold text-[#10231e]">
+        I am
+        <select className="mt-2 w-full rounded-xl border border-[#cbd5ce] bg-white px-4 py-3 font-normal outline-none transition focus:border-[#44705c] focus:ring-2 focus:ring-[#dce8df]" defaultValue={audienceOptions[0]} name="audience">
+          {audienceOptions.map((option) => <option key={option}>{option}</option>)}
         </select>
       </label>
       <label className="block text-sm font-semibold text-[#10231e]">

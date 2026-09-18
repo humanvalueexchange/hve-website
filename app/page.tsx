@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { SiteHeader } from "@/components/site-header";
-import { audiencePathways, engagementSteps, serviceOfferings } from "@/lib/site-content";
+import { audiencePathways, engagementSteps, proofItems, serviceOfferings } from "@/lib/site-content";
 
 const wealthTypes = [
   ["Time Wealth", "Own more of your attention, energy, and calendar.", "time"],
@@ -208,6 +208,25 @@ export default function Home() {
             <Link className="mt-8 inline-block rounded-full bg-[#10231e] px-6 py-3 font-semibold text-white transition hover:bg-[#24483a]" href="/wealth/time">
               Learn About Time Wealth
             </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#f6f3ec] px-6 py-20 sm:py-24">
+        <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-[1fr_1.2fr] md:items-center">
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#b27a32]">The HVE story</p>
+            <h2 className="mt-4 text-4xl font-semibold tracking-tight text-[#10231e] sm:text-5xl">Built through practice, not theory alone.</h2>
+          </div>
+          <div>
+            {proofItems.map((item) => (
+              <div key={item.title}>
+                <p className="text-lg leading-8 text-[#536159]">{item.description}</p>
+                <a className="mt-6 inline-block font-semibold text-[#10231e] hover:text-[#b27a32]" href={item.href}>
+                  {item.linkLabel} →
+                </a>
+              </div>
+            ))}
           </div>
         </div>
       </section>

@@ -86,3 +86,13 @@ export const audiencePathways = [
     description: "Use the Five Wealth framework to support more integrated conversations with clients and communities."
   }
 ] as const;
+
+export const proofItems = [
+  {
+    label: "Founder journey",
+    title: "A framework shaped by practice, relationships, and responsibility.",
+    description: "Human Value Exchange grew from a five-year journey through the Five Types of Wealth and the people who made that growth possible.",
+    href: "https://humanvalueexchange.blog/p/five-years-later",
+    linkLabel: "Read the founder story"
+  }
+] as const;

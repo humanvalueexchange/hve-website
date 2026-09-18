@@ -118,6 +118,28 @@ export default function AboutPage() {
       </section>
 
       <section className="bg-[#dce8df] px-6 py-20 sm:py-28">
+        <div className="mx-auto grid max-w-6xl gap-12 md:grid-cols-[1fr_1.2fr] md:items-center">
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#44705c]">Why HVE exists</p>
+            <h2 className="mt-4 text-4xl font-semibold tracking-tight text-[#10231e] sm:text-5xl">
+              A fuller scoreboard for a whole life.
+            </h2>
+          </div>
+          <div className="space-y-5 text-lg leading-8 text-[#536159]">
+            <p>
+              Human Value Exchange grew from a five-year journey that challenged a narrow definition of success. Professional achievement, income, and assets matter, but they do not tell the whole story of whether a person is free, healthy, connected, clear, and able to flourish.
+            </p>
+            <p>
+              The framework took shape through family, relationships, physical practice, reflection, coaching, education, and partnership. It is designed to be lived inside ordinary life rather than pursued apart from it.
+            </p>
+            <a className="inline-block font-semibold text-[#10231e] hover:text-[#b27a32]" href="https://humanvalueexchange.blog/p/five-years-later">
+              Read the founder&apos;s full journey →
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#dce8df] px-6 py-20 sm:py-28">
         <div className="mx-auto max-w-6xl">
           <div className="max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#44705c]">The people behind HVE</p>
