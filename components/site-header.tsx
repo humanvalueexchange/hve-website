@@ -12,6 +12,7 @@ export function SiteHeader() {
         <nav aria-label="Main navigation" className="flex w-full flex-wrap items-center gap-x-5 gap-y-3 text-sm font-semibold sm:w-auto sm:gap-x-8">
           <Link className="hover:text-[#b27a32]" href="/about">About</Link>
           <Link className="hover:text-[#b27a32]" href="/five-types">The Five Types</Link>
+          <Link className="hover:text-[#b27a32]" href="/services">How We Help</Link>
           <Link className="hover:text-[#b27a32]" href="/workshops">Workshops</Link>
           <a className="hover:text-[#b27a32]" href="https://humanvalueexchange.blog">Blog</a>
           <Link className="w-full rounded-full bg-[#10231e] px-4 py-2 text-center text-white hover:bg-[#24483a] sm:w-auto" href="/work-with-us">

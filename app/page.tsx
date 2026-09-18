@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { SiteHeader } from "@/components/site-header";
+import { audiencePathways, engagementSteps, serviceOfferings } from "@/lib/site-content";
 
 const wealthTypes = [
   ["Time Wealth", "Own more of your attention, energy, and calendar.", "time"],
@@ -127,6 +128,62 @@ export default function Home() {
               <h3 className="mt-5 text-2xl font-semibold text-[#10231e]">Keep learning in public.</h3>
               <p className="mt-4 leading-7 text-[#536159]">Read practical essays on sovereignty, wellness, wealth, and human flourishing.</p>
             </a>
+          </div>
+        </div>
+      </section>
+
+      <section className="px-6 py-20 sm:py-28">
+        <div className="mx-auto max-w-6xl">
+          <div className="max-w-2xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#b27a32]">How HVE helps</p>
+            <h2 className="mt-4 text-4xl font-semibold tracking-tight text-[#10231e] sm:text-5xl">Choose a practical next step.</h2>
+            <p className="mt-5 text-lg leading-8 text-[#536159]">
+              Start with clarity, then build the support and practice that make meaningful change easier to sustain.
+            </p>
+          </div>
+          <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            {serviceOfferings.map((offering) => (
+              <Link className="group rounded-2xl border border-[#d8ddd5] p-7 transition hover:-translate-y-1 hover:border-[#b27a32]" href="/services" key={offering.slug}>
+                <h3 className="text-2xl font-semibold text-[#10231e]">{offering.name}</h3>
+                <p className="mt-4 leading-7 text-[#536159]">{offering.summary}</p>
+                <span className="mt-6 inline-block font-semibold text-[#10231e] group-hover:text-[#b27a32]">Explore how HVE helps →</span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#f6f3ec] px-6 py-20 sm:py-28">
+        <div className="mx-auto grid max-w-6xl gap-12 md:grid-cols-[1fr_1.2fr]">
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#44705c]">The HVE method</p>
+            <h2 className="mt-4 text-4xl font-semibold tracking-tight text-[#10231e] sm:text-5xl">See the whole picture, then make one meaningful move.</h2>
+          </div>
+          <div className="grid gap-5 sm:grid-cols-2">
+            {engagementSteps.map((step) => (
+              <div className="rounded-2xl bg-white p-6" key={step.name}>
+                <p className="text-sm font-semibold text-[#b27a32]">{step.number}</p>
+                <h3 className="mt-3 text-xl font-semibold text-[#10231e]">{step.name}</h3>
+                <p className="mt-3 leading-7 text-[#536159]">{step.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#dce8df] px-6 py-20 sm:py-28">
+        <div className="mx-auto max-w-6xl">
+          <div className="max-w-2xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#44705c]">Who HVE helps</p>
+            <h2 className="mt-4 text-4xl font-semibold tracking-tight text-[#10231e] sm:text-5xl">A framework for real lives and real work.</h2>
+          </div>
+          <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            {audiencePathways.map((audience) => (
+              <article className="rounded-2xl bg-white p-7" key={audience.name}>
+                <h3 className="text-2xl font-semibold text-[#10231e]">{audience.name}</h3>
+                <p className="mt-4 leading-7 text-[#536159]">{audience.description}</p>
+              </article>
+            ))}
           </div>
         </div>
       </section>

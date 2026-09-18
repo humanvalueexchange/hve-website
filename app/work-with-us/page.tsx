@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { SiteHeader } from "@/components/site-header";
+import { ContactInquiryForm } from "@/components/contact-inquiry-form";
 
 export const metadata = {
   title: "Work with us | Human Value Exchange",
@@ -31,8 +32,8 @@ export default function WorkWithUsPage() {
           <p className="mt-8 max-w-2xl text-lg leading-8 text-[#536159]">
             Start with a conversation about where time is being lost, what capacity can be reclaimed, and the next Time Wealth investment your organization is ready to make.
           </p>
-          <a className="mt-10 inline-block rounded-full bg-[#10231e] px-6 py-3 font-semibold text-white transition hover:bg-[#24483a]" href="mailto:info@hveglobal.ca?subject=Discovery%20Call">
-            Book a discovery call
+          <a className="mt-10 inline-block rounded-full bg-[#10231e] px-6 py-3 font-semibold text-white transition hover:bg-[#24483a]" href="#contact">
+            Start a conversation
           </a>
         </div>
       </section>
@@ -65,6 +66,23 @@ export default function WorkWithUsPage() {
               <p className="mt-4 leading-7 text-[#536159]">{description}</p>
             </article>
           ))}
+        </div>
+      </section>
+      <section className="bg-[#f6f3ec] px-6 py-20 sm:py-24" id="contact">
+        <div className="mx-auto grid max-w-6xl gap-12 md:grid-cols-[0.8fr_1.2fr]">
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#b27a32]">Start with an assessment</p>
+            <h2 className="mt-4 text-4xl font-semibold tracking-tight text-[#10231e] sm:text-5xl">Tell us where you are starting.</h2>
+            <p className="mt-6 text-lg leading-8 text-[#536159]">
+              Share a little context and the email inquiry will be prepared for you. We can then identify the right conversation, workshop, or next step.
+            </p>
+            <p className="mt-5 text-lg leading-8 text-[#536159]">
+              Prefer to write directly? Email <a className="font-semibold text-[#10231e] hover:text-[#b27a32]" href="mailto:info@hveglobal.ca">info@hveglobal.ca</a>.
+            </p>
+          </div>
+          <div className="rounded-2xl border border-[#d8ddd5] bg-white p-7 sm:p-9">
+            <ContactInquiryForm />
+          </div>
         </div>
       </section>
       <section className="bg-[#10231e] px-6 py-20 text-[#f6f3ec] sm:py-24">
