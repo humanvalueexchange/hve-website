@@ -3,11 +3,15 @@ import { SiteFooter } from "@/components/site-footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://humanvalueexchange.com"),
   title: {
     default: "Human Value Exchange",
     template: "%s | Human Value Exchange"
   },
   description: "A framework for building the Five Types of Wealth.",
+  alternates: {
+    canonical: "/"
+  },
   icons: {
     icon: "/favicon.ico"
   }

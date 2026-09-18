@@ -4,8 +4,8 @@ import { TimeWealthWorkshopCard } from "@/components/time-wealth-workshop-card";
 import { timeWealthWorkshops } from "@/lib/time-wealth-content";
 
 export const metadata = {
-  title: "Workshops and Services | Human Value Exchange",
-  description: "Time Wealth workshops for creating measurable capacity through better systems, AI, and human-centered design."
+  title: "Workshops | Human Value Exchange",
+  description: "Practical HVE workshops for building Time Wealth and exploring the Five Types of Wealth."
 };
 
 const futureTracks = [
