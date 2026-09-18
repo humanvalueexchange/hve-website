@@ -14,11 +14,11 @@ const pathways = [
 ];
 
 const timeWealthStages = [
-  ["I'm Exploring", "Start by seeing where time is being lost and where capacity can be reclaimed.", "/wealth/time#time-wealth-discovery-workshop", "Discovery Workshop"],
-  ["I Need a Plan", "Build a practical blueprint for Time Wealth transformation.", "/wealth/time#ai-time-wealth-roadmap", "AI & Time Wealth Roadmap"],
-  ["I'm Ready to Implement", "Generate the first measurable Time Wealth win with Microsoft 365.", "/wealth/time#copilot-first-accelerator", "Copilot First Accelerator"],
-  ["I Want Transformation", "Create sustainable systems for Time Wealth across the organization.", "/wealth/time#time-wealth-transformation", "Time Wealth Transformation Program"],
-  ["I Want Ongoing Guidance", "Measure and optimize Time Wealth as your organization evolves.", "/wealth/time#time-wealth-operating-system", "Time Wealth Operating System"]
+  ["I'm Exploring", "Start by seeing where time is being lost and where capacity can be reclaimed.", "/wealth/time#time-foundations", "Time Wealth Foundations"],
+  ["I Need a Plan", "Build a practical blueprint for Time Wealth transformation.", "/wealth/time#time-assessment", "Time Wealth Assessment"],
+  ["I'm Ready to Build", "Create a practical blueprint for improving capacity, workflows, and human judgment.", "/wealth/time#time-roadmap", "Time Wealth Roadmap"],
+  ["I'm Ready to Practice", "Turn one high-value operational opportunity into a repeatable improvement.", "/wealth/time#time-implementation", "Time Wealth Implementation"],
+  ["I Want Ongoing Guidance", "Review capacity, adoption, and priorities as your organization evolves.", "/wealth/time#time-review", "Time Wealth Review"]
 ] as const;
 
 export default function WorkWithUsPage() {
