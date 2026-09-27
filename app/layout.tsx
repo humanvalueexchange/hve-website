@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     default: "Human Value Exchange",
     template: "%s | Human Value Exchange"
   },
-  description: "A framework for building the Five Types of Wealth.",
+  description: "A practical scorecard for building freedom, capacity, and human flourishing across the Five Types of Wealth.",
   icons: {
     icon: "/favicon.ico"
   }

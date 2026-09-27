@@ -37,7 +37,7 @@ export default function LifeOsPage() {
           </div>
           <div className="space-y-6 text-lg leading-8 text-[#536159]">
             <p>
-              HVE Life OS is the future way to see the whole picture of a human life: what is changing, what needs attention, and which next action is most likely to create meaningful progress.
+              HVE Life OS is a future way to see the whole picture of a human life: what is changing, what needs attention, and which next action is most likely to create meaningful progress.
             </p>
             <p>
               It will connect reflection, measurement, practical experiments, and human guidance across all five forms of wealth.
@@ -52,16 +52,16 @@ export default function LifeOsPage() {
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#44705c]">The Five Wealth Scoreboard</p>
             <h2 className="mt-4 text-4xl font-semibold tracking-tight text-[#10231e] sm:text-5xl">Make the invisible easier to see.</h2>
             <p className="mt-5 text-lg leading-8 text-[#536159]">
-              The scoreboard is not a single score for your worth. It is a practical set of signals that could help you notice patterns and choose better next steps.
+              The scoreboard is not a single score for your worth. It is a practical set of signals that could help you notice patterns and act on what matters next.
             </p>
           </div>
           <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {[
-              ["Time", "Attention, energy, calendar ownership, and leverage."],
+              ["Time", "Attention, energy, calendar control, and leverage."],
               ["Physical", "Strength, vitality, nutrition, movement, sleep, and recovery."],
               ["Mental", "Clarity, learning, resilience, purpose, and inner capacity."],
               ["Social", "Relationships, trust, contribution, partnership, and belonging."],
-              ["Financial", "Protection, cash flow, capital, ownership, and options."]
+              ["Financial", "Protection, cash flow, capital, asset building, and options."]
             ].map(([title, description], index) => (
               <article className="rounded-2xl bg-white p-7" key={title}>
                 <p className="text-sm font-semibold text-[#b27a32]">0{index + 1}</p>

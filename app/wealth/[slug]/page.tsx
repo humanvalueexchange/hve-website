@@ -18,7 +18,7 @@ export default function WealthPage({ params }: { params: { slug: string } }) {
       <SiteHeader />
       <section className="bg-[#10231e] px-6 py-24 text-[#f6f3ec] sm:py-32">
         <div className="mx-auto max-w-4xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[#d7a85b]">One of five</p>
+          <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[#d7a85b]">The HVE scorecard</p>
           <h1 className="mt-6 text-5xl font-semibold leading-tight tracking-tight sm:text-7xl">{item.name}</h1>
           <p className="mt-8 max-w-3xl text-xl leading-8 text-[#d7ded8]">{item.definition}</p>
         </div>
@@ -33,15 +33,15 @@ export default function WealthPage({ params }: { params: { slug: string } }) {
 
           <div className="mt-20 grid gap-6 md:grid-cols-2">
             <div className="rounded-2xl bg-[#dce8df] p-7">
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#44705c]">Signs of abundance</p>
-              <ul className="mt-6 space-y-4 text-lg leading-8 text-[#10231e]">
-                {item.abundance.map((sign) => <li key={sign}>+ {sign}</li>)}
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#44705c]">When this wealth is strong</p>
+              <ul className="mt-6 list-disc space-y-4 pl-5 text-lg leading-8 text-[#10231e]">
+                {item.abundance.map((sign) => <li key={sign}>{sign}</li>)}
               </ul>
             </div>
             <div className="rounded-2xl border border-[#d8ddd5] p-7">
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#b27a32]">Signs of depletion</p>
-              <ul className="mt-6 space-y-4 text-lg leading-8 text-[#536159]">
-                {item.depletion.map((sign) => <li key={sign}>- {sign}</li>)}
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#b27a32]">When this wealth is depleted</p>
+              <ul className="mt-6 list-disc space-y-4 pl-5 text-lg leading-8 text-[#536159]">
+                {item.depletion.map((sign) => <li key={sign}>{sign}</li>)}
               </ul>
             </div>
           </div>
@@ -67,10 +67,13 @@ export default function WealthPage({ params }: { params: { slug: string } }) {
           <section className="bg-[#dce8df] px-6 py-20 sm:py-28">
             <div className="mx-auto max-w-6xl">
               <div className="max-w-3xl">
-                <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#44705c]">The first commercial pillar</p>
-                <h2 className="mt-4 text-4xl font-semibold tracking-tight text-[#10231e] sm:text-5xl">Time is the foundation of every other form of wealth.</h2>
+                <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#44705c]">Start here</p>
+                <h2 className="mt-4 text-4xl font-semibold tracking-tight text-[#10231e] sm:text-5xl">Time is finite and foundational.</h2>
                 <p className="mt-6 text-xl leading-9 text-[#536159]">
-                  By reclaiming time through better systems, AI, and human-centered design, individuals and organizations create the capacity needed to invest in Physical Wealth, Mental Wealth, Social Wealth, and Financial Wealth.
+                  Time is spent on every other part of life. By reclaiming it through better systems,
+                  appropriate technology, and human-centered design, individuals and organizations
+                  create the capacity to invest in Physical Wealth, Mental Wealth, Social Wealth,
+                  and Financial Wealth.
                 </p>
               </div>
             </div>
@@ -80,7 +83,7 @@ export default function WealthPage({ params }: { params: { slug: string } }) {
             <div className="mx-auto max-w-6xl">
               <div className="max-w-3xl">
                 <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#b27a32]">How HVE creates Time Wealth</p>
-                <h2 className="mt-4 text-4xl font-semibold tracking-tight text-[#10231e] sm:text-5xl">Turn operational friction into measurable capacity.</h2>
+                <h2 className="mt-4 text-4xl font-semibold tracking-tight text-[#10231e] sm:text-5xl">Turn lost time into measurable capacity.</h2>
                 <p className="mt-6 text-lg leading-8 text-[#536159]">
                   We do not sell AI or Copilot as ends in themselves. We use them as mechanisms to create more freedom, focus, capacity, and better business performance.
                 </p>
@@ -94,7 +97,7 @@ export default function WealthPage({ params }: { params: { slug: string } }) {
           <section className="bg-[#10231e] px-6 py-20 text-[#f6f3ec] sm:py-28">
             <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-[1fr_1.2fr] md:items-center">
               <div>
-                <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#d7a85b]">Future offering</p>
+                <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#d7a85b]">Future vision</p>
                 <h2 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">Coming Soon: HVE Time Wealth Operating System</h2>
               </div>
               <div className="space-y-5 text-lg leading-8 text-[#d7ded8]">

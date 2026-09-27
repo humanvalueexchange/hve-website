@@ -3,11 +3,11 @@ export const wealthContent = [
     slug: "time",
     name: "Time Wealth",
     definition: "The ability to direct your attention, energy, and calendar toward what matters most.",
-    whyItMatters: "Your time is finite. Time wealth gives you the space to do meaningful work, care for the people you love, and choose your priorities instead of living entirely by other people's demands.",
+    whyItMatters: "Your time is finite. Time Wealth gives you the room to do meaningful work, care for the people you love, and choose your priorities instead of living entirely by other people's demands.",
     abundance: [
       "Your calendar reflects your real priorities.",
       "You protect focused work, rest, and recovery.",
-      "Automation and AI productivity tools create more capacity."
+      "Systems and appropriate technology create more useful capacity."
     ],
     depletion: [
       "Every week feels reactive and overcommitted.",
@@ -19,8 +19,8 @@ export const wealthContent = [
   {
     slug: "physical",
     name: "Physical Wealth",
-    definition: "The strength, vitality, and health capacity that allow you to participate fully in your life.",
-    whyItMatters: "Your body is the platform through which every ambition, relationship, and experience becomes real. Physical wealth supports energy today and resilience over a long life.",
+    definition: "The strength, vitality, and health capacity that help you participate fully in your life.",
+    whyItMatters: "Your body is where every ambition, relationship, and experience becomes real. Physical Wealth supports energy today and resilience over a long life.",
     abundance: [
       "You have reliable energy for the people and work you care about.",
       "Strength, mobility, nutrition, and sleep support your goals.",
@@ -36,25 +36,25 @@ export const wealthContent = [
   {
     slug: "mental",
     name: "Mental Wealth",
-    definition: "The clarity, self-awareness, learning capacity, and resilience that help you meet life with agency.",
-    whyItMatters: "Mental wealth is your inner operating capacity: the ability to understand yourself, learn from experience, make sound decisions, and stay connected to purpose when circumstances change.",
+    definition: "The clarity, self-awareness, learning capacity, and resilience that help you make decisions and act in line with what matters to you.",
+    whyItMatters: "Mental Wealth is your inner operating capacity: the ability to understand yourself, learn from experience, make sound decisions, and act with intention when circumstances change.",
     abundance: [
       "You can focus, reflect, and make decisions with clarity.",
       "You remain curious and continue learning.",
       "You recover from setbacks without losing your sense of purpose."
     ],
     depletion: [
-      "Noise, stress, or comparison make decisions feel impossible.",
+      "Noise, stress, or comparison drive your decisions.",
       "You repeat patterns without understanding what drives them.",
-      "Resilience depends on pushing harder instead of adapting wisely."
+      "You push harder when adapting wisely would serve you better."
     ],
     helps: "HVE helps you create reflective practices, identify the beliefs and habits shaping your decisions, and build a more capable inner operating system through learning, self-awareness, and purposeful action."
   },
   {
     slug: "social",
     name: "Social Wealth",
-    definition: "The relationships, trust, contribution, and belonging that make a life meaningful and resilient.",
-    whyItMatters: "No one builds a flourishing life alone. Social wealth gives you people to rely on, communities to contribute to, and partnerships that make shared progress possible.",
+    definition: "The relationships, trust, contribution, and belonging that make life meaningful and fulfilling.",
+    whyItMatters: "No one builds a flourishing life alone. Social Wealth gives you people to rely on, communities to contribute to, and partnerships that make shared progress possible.",
     abundance: [
       "You invest in relationships with attention and consistency.",
       "Trust, honesty, and mutual contribution shape your partnerships.",
@@ -63,26 +63,26 @@ export const wealthContent = [
     depletion: [
       "Important relationships only receive leftover time and energy.",
       "Conflict, isolation, or mistrust are left unaddressed.",
-      "You are surrounded by connections but lack real belonging."
+      "You turn to work, social media, or television to avoid feelings of loneliness."
     ],
     helps: "HVE helps you see relationships as a form of wealth, identify the communities and partnerships that support your values, and make more intentional investments in family, friendship, and contribution."
   },
   {
     slug: "financial",
     name: "Financial Wealth",
-    definition: "The resources, protection, and options that expand your freedom and ability to choose.",
-    whyItMatters: "Financial wealth is not a score of personal worth. It is the capacity to protect your time, manage uncertainty, support the people you love, and direct capital toward the future you want to build.",
+    definition: "The awareness, resources, protection, and growth options that expand your freedom and ability to choose.",
+    whyItMatters: "Financial Wealth is not a score of personal worth. It is the capacity to protect your time, manage uncertainty, support the people you love, and direct resources toward the future you deserve and desire.",
     abundance: [
-      "Cash flow is visible, intentional, and aligned with priorities.",
+      "Cash flow is consistent, visible, and aligned with your priorities.",
       "Protection through reserves, insurance, and thoughtful planning is in place.",
-      "Capital supports ownership, business building, and long-term sovereignty."
+      "Capital supports asset acquisition, business building, and long-term freedom."
     ],
     depletion: [
       "Cash flow is unclear or controlled by short-term pressure.",
       "One unexpected event could destabilize the household or business.",
-      "Capital is consumed without building protection, ownership, or options."
+      "Capital is directed without enough understanding of protection, control, or the path to future goals."
     ],
-    helps: "HVE provides practical education around protection, cash flow, capital formation, insurance, Infinite Banking concepts, business ownership, and financial sovereignty. HVE does not provide individualized investment or insurance advice."
+    helps: "HVE provides practical education around protection, cash flow, capital formation, insurance, Infinite Banking concepts, asset acquisition, business growth, and financial sovereignty. HVE does not provide individualized investment or insurance advice."
   }
 ] as const;
 

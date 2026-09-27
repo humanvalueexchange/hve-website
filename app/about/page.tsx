@@ -9,10 +9,10 @@ export const metadata = {
 
 const wealthTypes = [
   ["Time Wealth", "The foundation for every other form of wealth. Create greater freedom, focus, and capacity by using time more intentionally.", "bg-[#dce8df]"],
-  ["Physical Wealth", "Health, energy, resilience, and sustainable performance that support a strong and capable life.", "bg-white"],
-  ["Mental Wealth", "Clarity, purpose, self-mastery, learning, and the inner capacity to navigate life well.", "bg-white"],
-  ["Social Wealth", "Relationships, trust, contribution, community, and a meaningful sense of belonging.", "bg-white"],
-  ["Financial Wealth", "Resources, resilience, ownership, and meaningful choice that support greater freedom and sovereignty.", "bg-white"]
+  ["Physical Wealth", "Strength, energy, health capacity, and sustainable performance that support a capable life.", "bg-white"],
+  ["Mental Wealth", "Clarity, self-awareness, learning, and the capacity to make decisions that reflect what matters to you.", "bg-white"],
+  ["Social Wealth", "Relationships, trust, contribution, and belonging that make life meaningful and fulfilling.", "bg-white"],
+  ["Financial Wealth", "Awareness, protection, resources, and growth options that expand freedom and meaningful choice.", "bg-white"]
 ] as const;
 
 const stewards = [
@@ -83,8 +83,8 @@ export default function AboutPage() {
             <p>Human Value Exchange was founded on a simple belief:</p>
             <p className="font-semibold text-[#f6f3ec]">Wealth is more than money.</p>
             <p>Many people spend years pursuing financial success while struggling with time, health, relationships, purpose, or personal freedom.</p>
-            <p>We created Human Value Exchange to broaden the conversation.</p>
-            <p>Our Five Types of Wealth framework helps individuals, families, professionals, and organizations strengthen the resources that contribute to a meaningful, resilient, and abundant life.</p>
+            <p>We created Human Value Exchange to give people a better scorecard.</p>
+            <p>Our Five Types of Wealth framework helps individuals, families, professionals, and organizations see what needs attention and build the resources that support a meaningful and fulfilling life.</p>
             <p>Today HVE brings together practitioners, educators, business leaders, and specialists who share a common mission:</p>
             <p className="font-semibold text-[#f6f3ec]">Helping people build greater freedom, capacity, and human flourishing.</p>
           </div>
@@ -97,7 +97,7 @@ export default function AboutPage() {
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#b27a32]">The framework</p>
             <h2 className="mt-4 text-4xl font-semibold tracking-tight text-[#10231e] sm:text-5xl">Five forms of wealth. One whole life.</h2>
             <p className="mt-6 text-lg leading-8 text-[#536159]">
-              Each form of wealth contributes to the freedom, resilience, and capacity required to live and work well.
+              Each form of wealth contributes to the freedom, capacity, and choices required to live and work well.
             </p>
           </div>
           <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
@@ -109,10 +109,10 @@ export default function AboutPage() {
             ))}
           </div>
           <p className="mt-10 max-w-4xl text-lg leading-8 text-[#536159]">
-            The Five Types of Wealth are a shared framework, not individual portfolios. Every contributor can bring experience, insight, and value to every pillar as Human Value Exchange grows.
+            The Five Types of Wealth are a shared scorecard, not five separate lives. Every contributor can bring experience, insight, and value to every pillar as Human Value Exchange grows.
           </p>
           <p className="mt-10 max-w-4xl text-lg leading-8 text-[#536159]">
-            While all five forms of wealth matter, Human Value Exchange currently leads with Time Wealth because time is the foundation from which physical health, mental clarity, relationships, and financial resilience can grow.
+            While all five forms of wealth matter, Human Value Exchange currently leads with Time Wealth because time is the finite foundation from which physical health, mental clarity, relationships, and financial options can grow.
           </p>
         </div>
       </section>
