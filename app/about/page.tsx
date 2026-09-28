@@ -10,9 +10,9 @@ export const metadata = {
 const wealthTypes = [
   ["Time Wealth", "The foundation for every other form of wealth. Create greater freedom, focus, and capacity by using time more intentionally.", "bg-[#dce8df]"],
   ["Physical Wealth", "Strength, energy, health capacity, and sustainable performance that support a capable life.", "bg-white"],
+  ["Financial Wealth", "Awareness, protection, resources, and growth options that expand freedom and meaningful choice.", "bg-white"],
   ["Mental Wealth", "Clarity, self-awareness, learning, and the capacity to make decisions that reflect what matters to you.", "bg-white"],
-  ["Social Wealth", "Relationships, trust, contribution, and belonging that make life meaningful and fulfilling.", "bg-white"],
-  ["Financial Wealth", "Awareness, protection, resources, and growth options that expand freedom and meaningful choice.", "bg-white"]
+  ["Social Wealth", "Relationships, trust, contribution, and belonging that make life meaningful and fulfilling.", "bg-white"]
 ] as const;
 
 const stewards = [
@@ -100,9 +100,9 @@ export default function AboutPage() {
               Each form of wealth contributes to the freedom, capacity, and choices required to live and work well.
             </p>
           </div>
-          <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-            {wealthTypes.map(([type, description, background]) => (
-              <article className={`rounded-2xl p-7 ${background}`} key={type}>
+          <div className="mx-auto mt-12 grid max-w-5xl gap-5 md:grid-cols-2">
+            {wealthTypes.map(([type, description, background], index) => (
+              <article className={`rounded-2xl p-7 ${background} ${index === 0 ? "md:col-span-2 md:w-1/2 md:justify-self-center" : ""}`} key={type}>
                 <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#44705c]">{type}</p>
                 <p className="mt-6 leading-7 text-[#536159]">{description}</p>
               </article>

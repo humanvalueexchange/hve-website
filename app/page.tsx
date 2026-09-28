@@ -25,7 +25,7 @@ export default function Home() {
               Most people pursue financial success while their time, health, relationships, and
               sense of purpose quietly run down. HVE helps individuals, families, teams, and
               organizations see the whole picture and make lasting progress across Time, Physical,
-              Mental, Social, and Financial Wealth.
+              Financial, Mental, and Social Wealth.
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-4">
               <Link className="rounded-full bg-[#d7a85b] px-6 py-3 font-semibold text-[#10231e] transition hover:bg-[#e5bd7b]" href="/five-types">
@@ -52,11 +52,13 @@ export default function Home() {
               see which resources are supporting your freedom and which need attention now.
             </p>
           </div>
-          <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          <div className="mx-auto mt-12 grid max-w-5xl gap-5 md:grid-cols-2">
             {wealthContent.map((item, index) => (
               <Link
                 className={`group rounded-2xl border p-6 transition hover:-translate-y-1 hover:border-[#b27a32] ${
-                  item.slug === "time" ? "border-[#b27a32] bg-[#dce8df]" : "border-[#d8ddd5] bg-white"
+                  item.slug === "time"
+                    ? "border-[#b27a32] bg-[#dce8df] md:col-span-2 md:w-1/2 md:justify-self-center"
+                    : "border-[#d8ddd5] bg-white"
                 }`}
                 href={`/wealth/${item.slug}`}
                 key={item.slug}

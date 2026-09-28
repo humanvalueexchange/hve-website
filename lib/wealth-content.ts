@@ -34,6 +34,23 @@ export const wealthContent = [
     helps: "HVE helps you turn physical goals into practical routines around strength, fitness, nutrition, sleep, longevity, and daily health practices. This is educational support, not medical care."
   },
   {
+    slug: "financial",
+    name: "Financial Wealth",
+    definition: "The awareness, resources, protection, and growth options that expand your freedom and ability to choose.",
+    whyItMatters: "Financial Wealth is not a score of personal worth. It is the capacity to protect your time, manage uncertainty, support the people you love, and direct resources toward the future you deserve and desire.",
+    abundance: [
+      "Cash flow is consistent, visible, and aligned with your priorities.",
+      "Protection through reserves, insurance, and thoughtful planning is in place.",
+      "Capital supports asset acquisition, business building, and long-term freedom."
+    ],
+    depletion: [
+      "Cash flow is unclear or controlled by short-term pressure.",
+      "One unexpected event could destabilize the household or business.",
+      "Capital is directed without enough understanding of protection, control, or the path to future goals."
+    ],
+    helps: "HVE provides practical education around protection, cash flow, capital formation, insurance, Infinite Banking concepts, asset acquisition, business growth, and financial sovereignty. HVE does not provide individualized investment or insurance advice."
+  },
+  {
     slug: "mental",
     name: "Mental Wealth",
     definition: "The clarity, self-awareness, learning capacity, and resilience that help you make decisions and act in line with what matters to you.",
@@ -66,23 +83,6 @@ export const wealthContent = [
       "You turn to work, social media, or television to avoid feelings of loneliness."
     ],
     helps: "HVE helps you see relationships as a form of wealth, identify the communities and partnerships that support your values, and make more intentional investments in family, friendship, and contribution."
-  },
-  {
-    slug: "financial",
-    name: "Financial Wealth",
-    definition: "The awareness, resources, protection, and growth options that expand your freedom and ability to choose.",
-    whyItMatters: "Financial Wealth is not a score of personal worth. It is the capacity to protect your time, manage uncertainty, support the people you love, and direct resources toward the future you deserve and desire.",
-    abundance: [
-      "Cash flow is consistent, visible, and aligned with your priorities.",
-      "Protection through reserves, insurance, and thoughtful planning is in place.",
-      "Capital supports asset acquisition, business building, and long-term freedom."
-    ],
-    depletion: [
-      "Cash flow is unclear or controlled by short-term pressure.",
-      "One unexpected event could destabilize the household or business.",
-      "Capital is directed without enough understanding of protection, control, or the path to future goals."
-    ],
-    helps: "HVE provides practical education around protection, cash flow, capital formation, insurance, Infinite Banking concepts, asset acquisition, business growth, and financial sovereignty. HVE does not provide individualized investment or insurance advice."
   }
 ] as const;
 

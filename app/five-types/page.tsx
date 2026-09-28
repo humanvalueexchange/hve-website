@@ -4,7 +4,7 @@ import { wealthContent } from "@/lib/wealth-content";
 
 export const metadata = {
   title: "The Five Types of Wealth | Human Value Exchange",
-  description: "See the whole scorecard across Time, Physical, Mental, Social, and Financial Wealth."
+  description: "See the whole scorecard across Time, Physical, Financial, Mental, and Social Wealth."
 };
 
 export default function FiveTypesPage() {
@@ -31,11 +31,13 @@ export default function FiveTypesPage() {
               where to begin.
             </p>
           </div>
-          <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          <div className="mx-auto mt-12 grid max-w-5xl gap-5 md:grid-cols-2">
             {wealthContent.map((item, index) => (
               <Link
                 className={`group rounded-2xl border p-7 transition hover:-translate-y-1 hover:border-[#b27a32] ${
-                  item.slug === "time" ? "border-[#b27a32] bg-[#dce8df]" : "border-[#d8ddd5] bg-white"
+                  item.slug === "time"
+                    ? "border-[#b27a32] bg-[#dce8df] md:col-span-2 md:w-1/2 md:justify-self-center"
+                    : "border-[#d8ddd5] bg-white"
                 }`}
                 href={`/wealth/${item.slug}`}
                 key={item.slug}

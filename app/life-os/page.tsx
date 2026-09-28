@@ -55,15 +55,15 @@ export default function LifeOsPage() {
               The scoreboard is not a single score for your worth. It is a practical set of signals that could help you notice patterns and act on what matters next.
             </p>
           </div>
-          <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          <div className="mx-auto mt-12 grid max-w-5xl gap-5 md:grid-cols-2">
             {[
               ["Time", "Attention, energy, calendar control, and leverage."],
               ["Physical", "Strength, vitality, nutrition, movement, sleep, and recovery."],
+              ["Financial", "Protection, cash flow, capital, asset building, and options."],
               ["Mental", "Clarity, learning, resilience, purpose, and inner capacity."],
-              ["Social", "Relationships, trust, contribution, partnership, and belonging."],
-              ["Financial", "Protection, cash flow, capital, asset building, and options."]
+              ["Social", "Relationships, trust, contribution, partnership, and belonging."]
             ].map(([title, description], index) => (
-              <article className="rounded-2xl bg-white p-7" key={title}>
+              <article className={`rounded-2xl bg-white p-7 ${index === 0 ? "md:col-span-2 md:w-1/2 md:justify-self-center" : ""}`} key={title}>
                 <p className="text-sm font-semibold text-[#b27a32]">0{index + 1}</p>
                 <h3 className="mt-8 text-2xl font-semibold text-[#10231e]">{title} Wealth</h3>
                 <p className="mt-4 leading-7 text-[#536159]">{description}</p>

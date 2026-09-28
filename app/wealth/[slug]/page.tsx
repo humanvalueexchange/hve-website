@@ -72,8 +72,8 @@ export default function WealthPage({ params }: { params: { slug: string } }) {
                 <p className="mt-6 text-xl leading-9 text-[#536159]">
                   Time is spent on every other part of life. By reclaiming it through better systems,
                   appropriate technology, and human-centered design, individuals and organizations
-                  create the capacity to invest in Physical Wealth, Mental Wealth, Social Wealth,
-                  and Financial Wealth.
+                  create the capacity to invest in Physical Wealth, Financial Wealth, Mental Wealth,
+                  and Social Wealth.
                 </p>
               </div>
             </div>

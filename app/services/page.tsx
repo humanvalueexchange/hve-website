@@ -91,9 +91,15 @@ export default function ServicesPage() {
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#b27a32]">The full scorecard</p>
             <h2 className="mt-4 text-4xl font-semibold tracking-tight text-[#10231e] sm:text-5xl">Start with the form of wealth that needs your attention.</h2>
           </div>
-          <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-            {wealthContent.map((item) => (
-              <Link className="group rounded-2xl border border-[#d8ddd5] p-7 transition hover:-translate-y-1 hover:border-[#b27a32]" href={`/wealth/${item.slug}`} key={item.slug}>
+          <div className="mx-auto mt-12 grid max-w-5xl gap-5 md:grid-cols-2">
+            {wealthContent.map((item, index) => (
+              <Link
+                className={`group rounded-2xl border border-[#d8ddd5] p-7 transition hover:-translate-y-1 hover:border-[#b27a32] ${
+                  index === 0 ? "md:col-span-2 md:w-1/2 md:justify-self-center" : ""
+                }`}
+                href={`/wealth/${item.slug}`}
+                key={item.slug}
+              >
                 <h3 className="text-2xl font-semibold text-[#10231e]">{item.name}</h3>
                 <p className="mt-4 leading-7 text-[#536159]">{item.definition}</p>
                 <span className="mt-6 inline-block font-semibold text-[#10231e] group-hover:text-[#b27a32]">Explore {item.name} →</span>
