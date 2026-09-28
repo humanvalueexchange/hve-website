@@ -16,12 +16,15 @@ export function SiteFooter() {
           </p>
         </div>
         <nav aria-label="Footer navigation" className="grid grid-cols-2 gap-x-6 gap-y-4 text-sm font-semibold text-[#d7ded8] sm:grid-cols-3">
+          <Link className="hover:text-white" href="/about">About</Link>
           <Link className="hover:text-white" href="/five-types">Five Types of Wealth</Link>
           <Link className="hover:text-white" href="/services">Services</Link>
           <Link className="hover:text-white" href="/workshops">Workshops</Link>
           <a className="hover:text-white" href="https://humanvalueexchange.blog">Blog</a>
-          <Link className="hover:text-white" href="/work-with-us">Work with us</Link>
-          <Link className="hover:text-white" href="/life-os">HVE Life OS</Link>
+          <Link className="rounded-full bg-[#d7a85b] px-4 py-2 text-center text-[#10231e] hover:bg-[#e5bd7b]" href="/work-with-us#assessment">
+            Start here
+          </Link>
+          <Link className="hover:text-white" href="/life-os">HVE Life OS — Future Vision</Link>
           <a className="hover:text-white" href="mailto:info@hveglobal.ca">Contact HVE</a>
         </nav>
       </div>
@@ -29,7 +32,7 @@ export function SiteFooter() {
         <div className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <p>Human Value Exchange · Wealth is more than money.</p>
-            <p className="mt-2">Designed to improve readability for some visitors with dyslexia.</p>
+            <p className="mt-2">Accessibility options</p>
           </div>
           <AccessibilityToggle />
         </div>
