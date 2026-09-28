@@ -1,18 +1,10 @@
 import Link from "next/link";
 import { SiteHeader } from "@/components/site-header";
-import { audiencePathways, engagementSteps, proofItems, serviceOfferings } from "@/lib/site-content";
-
-const wealthTypes = [
-  ["Time Wealth", "Own more of your attention, energy, and calendar.", "time"],
-  ["Physical Wealth", "Build the strength and vitality to live fully.", "physical"],
-  ["Mental Wealth", "Develop clarity, resilience, and a growth-oriented mind.", "mental"],
-  ["Social Wealth", "Create relationships and communities that make life richer.", "social"],
-  ["Financial Wealth", "Use money as a tool for freedom and meaningful choice.", "financial"]
-];
+import { wealthContent } from "@/lib/wealth-content";
 
 export const metadata = {
   title: "Human Value Exchange",
-  description: "Build freedom, sovereignty, and human flourishing across the Five Types of Wealth."
+  description: "A practical scorecard for building freedom, capacity, and human flourishing across the Five Types of Wealth."
 };
 
 export default function Home() {
@@ -27,51 +19,66 @@ export default function Home() {
           </p>
           <div className="max-w-4xl">
             <h1 className="text-5xl font-semibold leading-[1.05] tracking-tight sm:text-7xl">
-              Wealth is more than money.
+              What if you&apos;ve been measuring wealth with the wrong scorecard?
             </h1>
             <p className="mt-8 max-w-3xl text-lg leading-8 text-[#d7ded8] sm:text-xl">
-              Human Value Exchange helps individuals, families, and organizations build freedom,
-              sovereignty, and human flourishing across five forms of wealth: Time, Physical,
-              Mental, Social, and Financial.
+              Most people pursue financial success while their time, health, relationships, and
+              sense of purpose quietly run down. HVE helps individuals, families, teams, and
+              organizations see the whole picture and make lasting progress across Time, Physical,
+              Financial, Mental, and Social Wealth.
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-4">
               <Link className="rounded-full bg-[#d7a85b] px-6 py-3 font-semibold text-[#10231e] transition hover:bg-[#e5bd7b]" href="/five-types">
                 Explore the framework
               </Link>
-              <Link className="rounded-full border border-[#8ea196] px-6 py-3 font-semibold transition hover:border-white" href="/work-with-us">
-                Work with us
+              <Link className="rounded-full border border-[#8ea196] px-6 py-3 font-semibold transition hover:border-white" href="/wealth/time">
+                Start with Time Wealth
               </Link>
               <a className="px-2 py-3 font-semibold text-[#d7ded8] transition hover:text-white" href="https://humanvalueexchange.blog">
-                Read the blog
+                Read the scorecard
               </a>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="bg-[#f6f3ec] px-6 py-20 text-[#10231e] sm:py-28">
+      <section className="bg-[#f6f3ec] px-6 py-20 text-[#10231e] sm:py-28" id="framework">
         <div className="mx-auto max-w-6xl">
           <div className="max-w-2xl">
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#b27a32]">The framework</p>
-            <h2 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">The Five Types of Wealth.</h2>
+            <h2 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">See the whole scorecard.</h2>
             <p className="mt-5 text-lg leading-8 text-[#536159]">
-              A practical way to see the resources that make a rich life possible—not just the
-              balance in an account.
+              Financial wealth matters, but it is not the whole measure. The Five Types help you
+              see which resources are supporting your freedom and which need attention now.
             </p>
           </div>
-          <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-            {wealthTypes.map(([title, description, slug], index) => (
-              <Link className="group rounded-2xl border border-[#d8ddd5] bg-white p-6 transition hover:-translate-y-1 hover:border-[#b27a32]" href={`/wealth/${slug}`} key={slug}>
-                <p className="text-sm font-semibold text-[#b27a32]">0{index + 1}</p>
-                <h3 className="mt-8 text-2xl font-semibold">{title}</h3>
-                <p className="mt-3 leading-7 text-[#536159]">{description}</p>
-                <span className="mt-6 inline-block font-semibold text-[#10231e] group-hover:text-[#b27a32]">Explore {title} →</span>
+          <div className="mx-auto mt-12 grid max-w-5xl gap-5 md:grid-cols-2">
+            {wealthContent.map((item, index) => (
+              <Link
+                className={`group rounded-2xl border p-6 transition hover:-translate-y-1 hover:border-[#b27a32] ${
+                  item.slug === "time"
+                    ? "border-[#b27a32] bg-[#dce8df] md:col-span-2 md:w-1/2 md:justify-self-center"
+                    : "border-[#d8ddd5] bg-white"
+                }`}
+                href={`/wealth/${item.slug}`}
+                key={item.slug}
+              >
+                <div className="flex items-center justify-between gap-4">
+                  <p className="text-sm font-semibold text-[#b27a32]">0{index + 1}</p>
+                  {item.slug === "time" ? (
+                    <span className="rounded-full bg-[#10231e] px-3 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-[#f6f3ec]">
+                      Start here
+                    </span>
+                  ) : null}
+                </div>
+                <h3 className="mt-8 text-2xl font-semibold">{item.name}</h3>
+                <p className="mt-3 leading-7 text-[#536159]">{item.definition}</p>
+                <span className="mt-6 inline-block font-semibold text-[#10231e] group-hover:text-[#b27a32]">
+                  {item.slug === "time" ? "Start with Time Wealth" : `Explore ${item.name}`} →
+                </span>
               </Link>
             ))}
           </div>
-          <Link className="mt-10 inline-block font-semibold text-[#10231e] hover:text-[#b27a32]" href="/five-types">
-            See the full framework →
-          </Link>
         </div>
       </section>
 
@@ -80,21 +87,20 @@ export default function Home() {
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#b27a32]">Why HVE exists</p>
             <h2 className="mt-4 text-4xl font-semibold tracking-tight text-[#10231e] sm:text-5xl">
-              Because a full life cannot be measured in one number.
+              A full life needs a fuller scorecard.
             </h2>
           </div>
           <div className="space-y-6 text-lg leading-8 text-[#536159]">
             <p>
-              Modern life teaches us to optimize for financial outcomes while the resources that
-              make those outcomes meaningful quietly run down.
+              Financial success can grow while the resources that make it meaningful quietly
+              decline: time, health, relationships, purpose, and freedom.
             </p>
             <p>
-              Human Value Exchange gives individuals, families, and organizations a clearer way
-              to see the whole picture and make intentional investments in the wealth that
-              supports freedom, relationships, and flourishing.
+              HVE gives people a practical way to see the whole picture, identify what needs
+              attention now, and make one meaningful move at a time.
             </p>
             <Link className="inline-block font-semibold text-[#10231e] hover:text-[#b27a32]" href="/about">
-              Learn about HVE →
+              Learn why HVE exists →
             </Link>
           </div>
         </div>
@@ -103,87 +109,37 @@ export default function Home() {
       <section className="bg-[#dce8df] px-6 py-20 sm:py-28">
         <div className="mx-auto max-w-6xl">
           <div className="max-w-2xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#44705c]">Ways to engage</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#44705c]">How HVE helps</p>
             <h2 className="mt-4 text-4xl font-semibold tracking-tight text-[#10231e] sm:text-5xl">
-              Turn insight into a life you can feel.
+              Start with clarity. Build what matters.
             </h2>
             <p className="mt-5 text-lg leading-8 text-[#536159]">
-              Start with a conversation, a workshop, or a deeper look at the framework. The next
-              meaningful move depends on where you are now.
+              We begin by seeing what is happening, then identify the next move and match it with
+              the support that can turn insight into lasting results.
             </p>
           </div>
           <div className="mt-12 grid gap-5 md:grid-cols-3">
+            <Link className="rounded-2xl bg-white p-7 transition hover:-translate-y-1" href="/work-with-us#assessment">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#b27a32]">Start here</p>
+              <h3 className="mt-5 text-2xl font-semibold text-[#10231e]">See what needs attention now.</h3>
+              <p className="mt-4 leading-7 text-[#536159]">
+                Begin with an assessment that brings the Five Types of Wealth into one clear view.
+              </p>
+            </Link>
             <Link className="rounded-2xl bg-white p-7 transition hover:-translate-y-1" href="/workshops">
               <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#b27a32]">Workshops</p>
-              <h3 className="mt-5 text-2xl font-semibold text-[#10231e]">Learn and build together.</h3>
-              <p className="mt-4 leading-7 text-[#536159]">Facilitated sessions for individuals, teams, and communities ready to move from reflection to action.</p>
+              <h3 className="mt-5 text-2xl font-semibold text-[#10231e]">Turn insight into results.</h3>
+              <p className="mt-4 leading-7 text-[#536159]">
+                Help your team identify the next move, build shared understanding, and create useful capacity.
+              </p>
             </Link>
-            <Link className="rounded-2xl bg-white p-7 transition hover:-translate-y-1" href="/work-with-us">
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#b27a32]">Work with us</p>
-              <h3 className="mt-5 text-2xl font-semibold text-[#10231e]">Find your next meaningful move.</h3>
-              <p className="mt-4 leading-7 text-[#536159]">Explore discovery calls, coaching, consulting, and partnership conversations with HVE.</p>
+            <Link className="rounded-2xl bg-white p-7 transition hover:-translate-y-1" href="/services">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#b27a32]">Services</p>
+              <h3 className="mt-5 text-2xl font-semibold text-[#10231e]">Build the right next step.</h3>
+              <p className="mt-4 leading-7 text-[#536159]">
+                Explore roadmaps, implementation, education, and ongoing guidance after the assessment.
+              </p>
             </Link>
-            <a className="rounded-2xl bg-white p-7 transition hover:-translate-y-1" href="https://humanvalueexchange.blog">
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#b27a32]">Blog</p>
-              <h3 className="mt-5 text-2xl font-semibold text-[#10231e]">Keep learning in public.</h3>
-              <p className="mt-4 leading-7 text-[#536159]">Read practical essays on sovereignty, wellness, wealth, and human flourishing.</p>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section className="px-6 py-20 sm:py-28">
-        <div className="mx-auto max-w-6xl">
-          <div className="max-w-2xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#b27a32]">How HVE helps</p>
-            <h2 className="mt-4 text-4xl font-semibold tracking-tight text-[#10231e] sm:text-5xl">Choose a practical next step.</h2>
-            <p className="mt-5 text-lg leading-8 text-[#536159]">
-              Start with clarity, then build the support and practice that make meaningful change easier to sustain.
-            </p>
-          </div>
-          <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-            {serviceOfferings.map((offering) => (
-              <Link className="group rounded-2xl border border-[#d8ddd5] p-7 transition hover:-translate-y-1 hover:border-[#b27a32]" href="/services" key={offering.slug}>
-                <h3 className="text-2xl font-semibold text-[#10231e]">{offering.name}</h3>
-                <p className="mt-4 leading-7 text-[#536159]">{offering.summary}</p>
-                <span className="mt-6 inline-block font-semibold text-[#10231e] group-hover:text-[#b27a32]">Explore how HVE helps →</span>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-[#f6f3ec] px-6 py-20 sm:py-28">
-        <div className="mx-auto grid max-w-6xl gap-12 md:grid-cols-[1fr_1.2fr]">
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#44705c]">The HVE method</p>
-            <h2 className="mt-4 text-4xl font-semibold tracking-tight text-[#10231e] sm:text-5xl">See the whole picture, then make one meaningful move.</h2>
-          </div>
-          <div className="grid gap-5 sm:grid-cols-2">
-            {engagementSteps.map((step) => (
-              <div className="rounded-2xl bg-white p-6" key={step.name}>
-                <p className="text-sm font-semibold text-[#b27a32]">{step.number}</p>
-                <h3 className="mt-3 text-xl font-semibold text-[#10231e]">{step.name}</h3>
-                <p className="mt-3 leading-7 text-[#536159]">{step.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-[#dce8df] px-6 py-20 sm:py-28">
-        <div className="mx-auto max-w-6xl">
-          <div className="max-w-2xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#44705c]">Who HVE helps</p>
-            <h2 className="mt-4 text-4xl font-semibold tracking-tight text-[#10231e] sm:text-5xl">A framework for real lives and real work.</h2>
-          </div>
-          <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-            {audiencePathways.map((audience) => (
-              <article className="rounded-2xl bg-white p-7" key={audience.name}>
-                <h3 className="text-2xl font-semibold text-[#10231e]">{audience.name}</h3>
-                <p className="mt-4 leading-7 text-[#536159]">{audience.description}</p>
-              </article>
-            ))}
           </div>
         </div>
       </section>
@@ -191,42 +147,26 @@ export default function Home() {
       <section className="px-6 py-20 sm:py-28">
         <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-[1fr_1.2fr] md:items-center">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#b27a32]">Time Wealth</p>
-            <h2 className="mt-4 text-4xl font-semibold tracking-tight text-[#10231e] sm:text-5xl">Reclaim Your Time Wealth.</h2>
+            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#b27a32]">Start here: Time Wealth</p>
+            <h2 className="mt-4 text-4xl font-semibold tracking-tight text-[#10231e] sm:text-5xl">
+              Time is the foundation of every other form of wealth.
+            </h2>
           </div>
           <div>
             <div className="space-y-5 text-lg leading-8 text-[#536159]">
-              <p>Most business owners don&apos;t need an AI strategy.</p>
-              <p>They need more time.</p>
+              <p>Time is finite. It is the resource every other part of life depends on.</p>
               <p>
-                Human Value Exchange helps organizations identify where time is being lost, prioritize the highest-value opportunities for improvement, and implement practical systems that create measurable capacity.
+                Time Wealth means having enough control over your attention, energy, and calendar
+                to do meaningful work, be with people you love, and choose your priorities.
               </p>
               <p>
-                Through workshops, roadmaps, Microsoft Copilot enablement, workflow redesign, and business agents, we help organizations transform operational friction into Time Wealth.
+                HVE helps organizations identify where time is leaking and turn operational
+                friction into measurable capacity.
               </p>
             </div>
             <Link className="mt-8 inline-block rounded-full bg-[#10231e] px-6 py-3 font-semibold text-white transition hover:bg-[#24483a]" href="/wealth/time">
-              Learn About Time Wealth
+              Explore Time Wealth
             </Link>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-[#f6f3ec] px-6 py-20 sm:py-24">
-        <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-[1fr_1.2fr] md:items-center">
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#b27a32]">The HVE story</p>
-            <h2 className="mt-4 text-4xl font-semibold tracking-tight text-[#10231e] sm:text-5xl">Built through practice, not theory alone.</h2>
-          </div>
-          <div>
-            {proofItems.map((item) => (
-              <div key={item.title}>
-                <p className="text-lg leading-8 text-[#536159]">{item.description}</p>
-                <a className="mt-6 inline-block font-semibold text-[#10231e] hover:text-[#b27a32]" href={item.href}>
-                  {item.linkLabel} →
-                </a>
-              </div>
-            ))}
           </div>
         </div>
       </section>
@@ -253,13 +193,13 @@ export default function Home() {
         <div className="mx-auto flex max-w-6xl flex-col gap-8 md:flex-row md:items-center md:justify-between">
           <div className="max-w-2xl">
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#b27a32]">Latest thinking</p>
-            <h2 className="mt-4 text-4xl font-semibold tracking-tight text-[#10231e] sm:text-5xl">Latest from Human Value Exchange</h2>
+            <h2 className="mt-4 text-4xl font-semibold tracking-tight text-[#10231e] sm:text-5xl">The scorecard is the starting point.</h2>
             <p className="mt-5 text-lg leading-8 text-[#536159]">
-              Essays and field notes on Time Wealth, sovereignty, health, wealth, relationships, and the future of human flourishing.
+              Read practical essays on Time Wealth, sovereignty, health, relationships, money, and the choices that make a richer life possible.
             </p>
           </div>
           <a className="shrink-0 rounded-full border border-[#10231e] px-6 py-3 font-semibold text-[#10231e] transition hover:bg-[#10231e] hover:text-white" href="https://humanvalueexchange.blog">
-            Read the blog
+            Read the HVE blog
           </a>
         </div>
       </section>
@@ -267,11 +207,11 @@ export default function Home() {
       <section className="bg-[#dce8df] px-6 py-20 sm:py-24">
         <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-8 md:flex-row md:items-center">
           <div className="max-w-2xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#44705c]">Start where you are</p>
-            <h2 className="mt-4 text-4xl font-semibold tracking-tight text-[#10231e]">Your next chapter deserves a better measure of wealth.</h2>
+            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#44705c]">Take the next step</p>
+            <h2 className="mt-4 text-4xl font-semibold tracking-tight text-[#10231e]">Find the move that matters now.</h2>
           </div>
-          <Link className="shrink-0 rounded-full bg-[#10231e] px-6 py-3 font-semibold text-white transition hover:bg-[#24483a]" href="/work-with-us">
-            Work with us
+          <Link className="shrink-0 rounded-full bg-[#10231e] px-6 py-3 font-semibold text-white transition hover:bg-[#24483a]" href="/work-with-us#assessment">
+            Start with an assessment
           </Link>
         </div>
       </section>
