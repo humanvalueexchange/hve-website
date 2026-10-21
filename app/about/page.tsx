@@ -48,7 +48,7 @@ const stewards = [
   },
   {
     name: "Alan Warner",
-    image: "/alan-graduation.jpeg",
+    image: "/alan-photo-2.png",
     role: "Contributor | Health & Sustainable Performance",
     paragraphs: [
       "Alan Warner recently graduated with honours from medical school at the University of the West Indies with the goal of becoming a sports medicine specialist. He holds a Master of Science degree from Mount Sinai School of Medicine in New York, and his academic background is in clinical research coordination.",
@@ -130,7 +130,9 @@ export default function AboutPage() {
                 <div>
                   <Image
                     alt={`${steward.name} portrait`}
-                    className="mb-6 aspect-square w-40 rounded-2xl object-cover"
+                    className={`mb-6 aspect-square w-40 rounded-2xl object-cover ${
+                      steward.name === "Alan Warner" ? "object-top" : "object-center"
+                    }`}
                     height={160}
                     src={steward.image}
                     width={160}
