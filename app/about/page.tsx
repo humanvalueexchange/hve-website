@@ -48,11 +48,12 @@ const stewards = [
   },
   {
     name: "Alan Warner",
-    image: "/alan-linkedin-pic.jpg",
+    image: "/alan-graduation.jpeg",
     role: "Contributor | Health & Sustainable Performance",
     paragraphs: [
-      "Alan Warner contributes practical experience in helping people improve health, energy, resilience, and sustainable performance through practical lifestyle change.",
-      "Full profile coming soon."
+      "Alan Warner recently graduated with honours from medical school at the University of the West Indies with the goal of becoming a sports medicine specialist. He holds a Master of Science degree from Mount Sinai School of Medicine in New York, and his academic background is in clinical research coordination.",
+      "He is a Certified Strength and Conditioning Specialist (NSCA-CSCS) and an Athlete Activation System Certified (AASc) Senior Coach at LPS Athletic in Toronto. He has a strong competitive background in swimming and water polo, having represented his native country of Barbados at the national level.",
+      "Over the last decade, Alan has gained extensive experience as a strength and conditioning coach, working with athletes ranging from amateur to professional levels in Barbados and across Canada who compete in leagues such as MLB, the NHL, Major League Soccer, and others. As Head of Strength and Conditioning, Alan leads the design and implementation of initial athlete assessments, customized sport-specific programming for in-season and off-season training, fitness benchmarking, and athletic performance development."
     ]
   },
   {
